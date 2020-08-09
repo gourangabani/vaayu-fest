@@ -6,7 +6,7 @@
 
 function Preloader() {
     var preloader = $('.preloader');
-    preloader.delay(7500).fadeOut(500);
+    preloader.delay(5000).fadeOut(500);
 }
 
 function setPreloader() {
@@ -18,7 +18,24 @@ function setPreloader() {
     }
 };
 
+function Modal() {
+    var custom_modal = $('#film-making-workshop-modal');
+    setTimeout(function () {
+        custom_modal.modal();
+    }, 10000);
+}
+
+function setModal() {
+    if (!sessionStorage.getItem('doNotShowModal')) {
+        sessionStorage.setItem('doNotShowModal', true);
+        Modal();
+    } else {
+        $('.film-making-workshop-modal').hide();
+    }
+};
+
 setPreloader();
+setModal();
 
 // let tl = gsap.timeline({
 //     delay: 0.5
@@ -100,7 +117,7 @@ setPreloader();
         // if element is between window's top and bottom edges
         return elementTopEdge + offset <= windowBottomEdge;
     }
-    
+
     if (onScreen($("#contact-us"))) {
         gsap.from(".power-2", {
             duration: 0.5,
