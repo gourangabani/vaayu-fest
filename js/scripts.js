@@ -6,7 +6,7 @@
 
 function Preloader() {
     var preloader = $('.preloader');
-    preloader.delay(5000).fadeOut(500);
+    preloader.delay(7500).fadeOut(500);
 }
 
 function setPreloader() {
