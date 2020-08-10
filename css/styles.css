@@ -11273,11 +11273,11 @@ section.separate-section .separate-section-content {
 }
 
 #masthead {
-  background: linear-gradient(to bottom, #162447f2, #e43f5ae6), url('../media/images/banners/4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
+  background: linear-gradient(to bottom, #e43f5a80, #07cff680), url('../media/images/banners/4.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  height: 100vh !important;
 }
 
 .masthead h1 {
@@ -11342,30 +11342,30 @@ section.separate-section .separate-section-content {
 }
 
 #about-us {
-  background: linear-gradient(to bottom, #162447b9, #e43f5abc), url('../media/images/banners/4.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to bottom, #07cff680, #e43f5abc), url('../media/images/banners/4.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   background-attachment: fixed;
 }
 
 #gallery {
-  background: linear-gradient(to bottom, #162447b9, #e43f5abc), url('../media/images/banners/1.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to bottom, #e43f5abc, #07cff6bc), url('../media/images/banners/1.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   background-attachment: fixed;
 }
 
 #team {
-  background: linear-gradient(to bottom, #162447b9, #e43f5abc), url('../media/images/banners/3.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to bottom, #07cff6bc, #e43f5abc), url('../media/images/banners/3.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   background-attachment: fixed;
 }
 
 #sponsors {
-  background: linear-gradient(to bottom, #162447b9, #e43f5abc), url('../media/images/banners/2.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(to bottom, #e43f5abc, #07cff6bc), url('../media/images/banners/2.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   background-attachment: fixed;
 }
 
