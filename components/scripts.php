@@ -7,3 +7,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
 <!-- core theme js -->
 <script src="js/scripts.js"></script>
+<!-- font awesome icons (free version) -->
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
