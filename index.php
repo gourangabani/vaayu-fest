@@ -473,3 +473,7 @@ include 'data/sponsors.php';
 </body>
 
 </html>
+
+<?php
+include 'components/notes.php';
+?>
