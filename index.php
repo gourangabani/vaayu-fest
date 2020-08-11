@@ -270,93 +270,37 @@ include 'data/sponsors.php';
                     <div id="team-tab-content" class="tab-content">
                         <div id="top-5" class="tab-pane fade px-4 py-5 show active">
                             <div class="row">
-                                <div class="col-md-4"></div>
-                                <div class="col-md-4 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/armaan-singh-pruthi.jpg" alt="Armaan Singh Pruthi" />
-                                    <h3 class="name text-center">
-                                        Armaan Singh Pruthi
-                                    </h3>
-                                    <h6 class="text-muted text-center">
-                                        Chairperson
-                                    </h6>
-                                    <h6 class="text-muted text-center">
-                                        <a class="social-icon p-2" href="mailto:chairperson@vaayufest.org">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                        <a class="social-icon p-2" href="tel:‭+919987217296‬">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                    </h6>
-                                </div>
-                                <div class="col-md-4"></div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/aayush-rathi.jpg" alt="Aayush Rathi" />
-                                    <h3 class="name text-center">
-                                        Aayush Rathi
-                                    </h3>
-                                    <h6 class="text-muted text-center">
-                                        Vice-Chairperson Admin 1
-                                    </h6>
-                                    <h6 class="text-muted text-center">
-                                        <a class="social-icon p-2" href="mailto:aayush@vaayufest.org">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                        <a class="social-icon p-2" href="tel:+919930229847">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                    </h6>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/reyansh-jain.jpg" alt="Reyansh Jain" />
-                                    <h3 class="name text-center">
-                                        Reyansh Jain
-                                    </h3>
-                                    <h6 class="text-muted text-center">
-                                        Vice-Chairperson Admin 2
-                                    </h6>
-                                    <h6 class="text-muted text-center">
-                                        <a class="social-icon p-2" href="mailto:reyansh@vaayufest.org">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                        <a class="social-icon p-2" href="tel:‭+919311009750‬">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                    </h6>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/harshvardhan-rungta.jpg" alt="Harshvardhan Rungta" />
-                                    <h3 class="name text-center">
-                                        Harshvardhan Rungta
-                                    </h3>
-                                    <h6 class="text-muted text-center">
-                                        Vice-Chairperson Events 1
-                                    </h6>
-                                    <h6 class="text-muted text-center">
-                                        <a class="social-icon p-2" href="mailto:harshvardhan@vaayufest.org">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                        <a class="social-icon p-2" href="tel:‭+917021415454‬">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                    </h6>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/tinish-gupta.jpg" alt="Tinish Gupta" />
-                                    <h3 class="name text-center">
-                                        Tinish Gupta
-                                    </h3>
-                                    <h6 class="text-muted text-center">
-                                        Vice-Chairperson Events 2
-                                    </h6>
-                                    <h6 class="text-muted text-center">
-                                        <a class="social-icon p-2" href="mailto:tinish@vaayufest.org">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                        <a class="social-icon p-2" href="tel:‭+918100678446‬">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                    </h6>
-                                </div>
+                                <?php
+                                foreach ($departmentsTopFive as $department) {
+                                    if ($department->departmentSlug == 'chairperson') {
+                                        echo '
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4 p-3">
+                                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/' . $department->departmentHeadImage . '" alt="' . $department->departmentName . ' - ' . $department->departmentHeadName . '" />
+                                            <h3 class="name text-center">
+                                                ' . $department->departmentHeadName . '
+                                            </h3>
+                                            <h6 class="text-muted text-center">
+                                                ' . $department->departmentName . '
+                                            </h6>
+                                        </div>
+                                        <div class="col-md-4"></div>
+                                        ';
+                                    } else {
+                                        echo '
+                                        <div class="col-md-3 p-3">
+                                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/' . $department->departmentHeadImage . '" alt="' . $department->departmentName . ' - ' . $department->departmentHeadName . '" />
+                                            <h3 class="name text-center">
+                                                ' . $department->departmentHeadName . '
+                                            </h3>
+                                            <h6 class="text-muted text-center">
+                                                ' . $department->departmentName . '
+                                            </h6>
+                                        </div>
+                                        ';
+                                    }
+                                }
+                                ?>
                             </div>
                         </div>
                         <div id="admin-1" class="tab-pane fade px-4 py-5">

@@ -255,3 +255,70 @@ $departmentsAdminOne = [$hospitality, $publicRelations, $marketing, $foodAndColl
 $departmentsAdminTwo = [$creatives, $security, $logistics, $printingAndSupplies, $digitalCommunications, $digitalWorks];
 $departmentsEventsOne = [$managementEvents, $externals, $innovations, $fineArts, $literaryArts];
 $departmentsEventsTwo = [$performingArts, $proshows, $informals, $gamingAndSports];
+
+$chairperson = new Department(
+    21,
+    'chairperson',
+    'Chairperson',
+    '',
+    verticals::topFive,
+    'chairperson.jpg',
+    'Armaan Singh Pruthi',
+    '‭+919987217296‬',
+    'chairperson@vaayufest.org',
+    'armaan-singh-pruthi.jpg'
+);
+
+$viceChairpersonAdminOne = new Department(
+    22,
+    'vice-chairperson-admin-1',
+    'Vice-Chairperson Admin 1',
+    '',
+    verticals::topFive,
+    'vice-chairperson.jpg',
+    'Aayush Rathi',
+    '‭+919930229847',
+    'aayush@vaayufest.org',
+    'aayush-rathi.jpg'
+);
+
+$viceChairpersonAdminTwo = new Department(
+    23,
+    'vice-chairperson-admin-2',
+    'Vice-Chairperson Admin 2',
+    '',
+    verticals::topFive,
+    'vice-chairperson.jpg',
+    'Reyansh Jain',
+    '‭+‭919311009750‬',
+    'reyansh@vaayufest.org',
+    'reyansh-jain.jpg'
+);
+
+$viceChairpersonEventsOne = new Department(
+    24,
+    'vice-chairperson-events-1',
+    'Vice-Chairperson Events 1',
+    '',
+    verticals::topFive,
+    'vice-chairperson.jpg',
+    'Harshvardhan Rungta',
+    '‭‭+917021415454‬',
+    'harshvardhan@vaayufest.org',
+    'harshvardhan-rungta.jpg'
+);
+
+$viceChairpersonEventsTwo = new Department(
+    25,
+    'vice-chairperson-events-2',
+    'Vice-Chairperson Events 2',
+    '',
+    verticals::topFive,
+    'vice-chairperson.jpg',
+    'Tinish Gupta',
+    '‭‭‭+918100678446‬',
+    'tinish@vaayufest.org',
+    'tinish-gupta.jpg'
+);
+
+$departmentsTopFive = [$chairperson, $viceChairpersonAdminOne, $viceChairpersonAdminTwo, $viceChairpersonEventsOne, $viceChairpersonEventsTwo];

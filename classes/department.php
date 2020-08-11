@@ -30,6 +30,7 @@ class Department
 
 abstract class verticals
 {
+    const topFive = 'Top 5';
     const adminOne = 'Admin 1';
     const adminTwo = 'Admin 2';
     const eventsOne = 'Events 1';
