@@ -228,7 +228,7 @@ $informals = new Department(
     'Adyashree Mahapatra ',
     '+919987127441',
     'informals.vaayu@gmail.com',
-    'adyashree-mahopatra-.jpg'
+    'adyashree-mahopatra.jpg'
 );
 $gamingAndSports = new Department(
     20,
