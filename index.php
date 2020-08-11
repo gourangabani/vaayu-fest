@@ -12,7 +12,9 @@
 
 <?php
 include 'classes/department.php';
+include 'classes/sponsor.php';
 include 'data/departments.php';
+include 'data/sponsors.php';
 ?>
 
 <head>
@@ -481,194 +483,50 @@ include 'data/departments.php';
                     <div id="sponsors-tab-content" class="tab-content">
                         <div id="ilu" class="tab-pane fade px-4 py-5 show active">
                             <div class="row">
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/dilip-buildcon-ltd.jpg" alt="Dilip Buildcon Ltd" />
-                                    <h3 class="name text-center">
-                                        Dilip Buildcon Ltd
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/idemitsu.jpg" alt="Idemitsu" />
-                                    <h3 class="name text-center">
-                                        Idemitsu
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/inditrade.jpg" alt="Inditrade" />
-                                    <h3 class="name text-center">
-                                        Inditrade
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/kreative-keeda.jpg" alt="Kreative Keeda" />
-                                    <h3 class="name text-center">
-                                        Kreative Keeda
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/sbi.jpg" alt="SBI" />
-                                    <h3 class="name text-center">
-                                        SBI
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/tribe-vibe.jpg" alt="Tribe Vibe" />
-                                    <h3 class="name text-center">
-                                        Tribe Vibe
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/nav-bharat.jpg" alt="Nav Bharat" />
-                                    <h3 class="name text-center">
-                                        Nav Bharat
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/vijay-sales.jpg" alt="Vijay Sales" />
-                                    <h3 class="name text-center">
-                                        Vijay Sales
-                                    </h3>
-                                </div>
+                                <?php
+                                foreach ($sponsorsILU as $sponsor) {
+                                    echo '
+                                    <div class="col-md-3 p-3">
+                                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/' . $sponsor->sponsorLogo . '" alt="Sponsor - ' . $sponsor->sponsorName . '" />
+                                        <h3 class="name text-center">
+                                            ' . $sponsor->sponsorName . '
+                                        </h3>
+                                    </div>
+                                    ';
+                                }
+                                ?>
                             </div>
                         </div>
                         <div id="general" class="tab-pane fade px-4 py-5">
                             <div class="row">
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/body-canvas.jpg" alt="Body Canvas" />
-                                    <h3 class="name text-center">
-                                        Body Canvas
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/charagh-din.jpg" alt="Charagh DIn" />
-                                    <h3 class="name text-center">
-                                        Charagh Din
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/dell-technologies.jpg" alt="Dell Technologies" />
-                                    <h3 class="name text-center">
-                                        Dell Technologies
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/denver.jpg" alt="Denver" />
-                                    <h3 class="name text-center">
-                                        Denver
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/emeveta.jpg" alt="Emeveta" />
-                                    <h3 class="name text-center">
-                                        Emeveta
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/icreate.jpg" alt="icreate" />
-                                    <h3 class="name text-center">
-                                        icreate
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/kongs-nutrition.jpg" alt="Kong's Nutrition" />
-                                    <h3 class="name text-center">
-                                        Kong's Nutrition
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/money-control.jpg" alt="Money Control" />
-                                    <h3 class="name text-center">
-                                        Money Control
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/poshn.jpg" alt="poshn" />
-                                    <h3 class="name text-center">
-                                        Poshn
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/schbang.jpg" alt="Schbang" />
-                                    <h3 class="name text-center">
-                                        Schbang
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/smaaash.jpg" alt="Smaaash" />
-                                    <h3 class="name text-center">
-                                        Smaaash
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/starbucks.jpg" alt="Starbucks" />
-                                    <h3 class="name text-center">
-                                        Starbucks
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/uniball.jpg" alt="uniball" />
-                                    <h3 class="name text-center">
-                                        Uniball
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/zomato.jpg" alt="zomato" />
-                                    <h3 class="name text-center">
-                                        Zomato
-                                    </h3>
-                                </div>
+                                <?php
+                                foreach ($sponsorsGeneral as $sponsor) {
+                                    echo '
+                                    <div class="col-md-3 p-3">
+                                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/' . $sponsor->sponsorLogo . '" alt="Sponsor - ' . $sponsor->sponsorName . '" />
+                                        <h3 class="name text-center">
+                                            ' . $sponsor->sponsorName . '
+                                        </h3>
+                                    </div>
+                                    ';
+                                }
+                                ?>
                             </div>
                         </div>
                         <div id="mass-media" class="tab-pane fade px-4 py-5">
                             <div class="row">
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/telex-advertisement.jpg" alt="Telex Advertisement" />
-                                    <h3 class="name text-center">
-                                        Telex Advertisement
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/ufo.jpg" alt="UFO" />
-                                    <h3 class="name text-center">
-                                        UFO
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/lokmat.jpg" alt="Lokmat" />
-                                    <h3 class="name text-center">
-                                        Lokmat
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/fisto-sports.jpg" alt="Fisto Sports" />
-                                    <h3 class="name text-center">
-                                        Fisto Sports
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/youth-incorporated.jpg" alt="Youth Incorporated" />
-                                    <h3 class="name text-center">
-                                        Youth Incorporated
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/the-hindu.jpg" alt="The Hindu" />
-                                    <h3 class="name text-center">
-                                        The Hindu
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/nav-bharat.jpg" alt="Nav Bharat" />
-                                    <h3 class="name text-center">
-                                        Nav Bharat
-                                    </h3>
-                                </div>
-                                <div class="col-md-3 p-3">
-                                    <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/gobble-grams.jpg" alt="Gobble Grams" />
-                                    <h3 class="name text-center">
-                                        Gobble Grams
-                                    </h3>
-                                </div>
+                                <?php
+                                foreach ($sponsorsMassMedia as $sponsor) {
+                                    echo '
+                                    <div class="col-md-3 p-3">
+                                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/' . $sponsor->sponsorLogo . '" alt="Sponsor - ' . $sponsor->sponsorName . '" />
+                                        <h3 class="name text-center">
+                                            ' . $sponsor->sponsorName . '
+                                        </h3>
+                                    </div>
+                                    ';
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>
@@ -683,7 +541,6 @@ include 'data/departments.php';
                         Always Listening
                     </h2>
                     <div class="row">
-
                         <div class="col-md-3 p-2">
                             <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/armaan-singh-pruthi.jpg" alt="Chairperson" />
                             <h6 class="text-muted text-center">
