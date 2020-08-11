@@ -252,7 +252,7 @@ include 'data/sponsors.php';
                         <div id="events-1" class="tab-pane fade px-4 py-5">
                             <div class="row">
                                 <?php
-                                foreach ($departmentsEventsTwo as $department) {
+                                foreach ($departmentsEventsOne as $department) {
                                     echo '
                                     <div class="col-md-3 p-3 text-center">
                                         <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/team-original/' . $department->departmentHeadImage . '" alt="HoD ' . $department->departmentName . ' - ' . $department->departmentHeadName . '" />
