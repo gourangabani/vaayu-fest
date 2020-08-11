@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-/*!
-* Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
-* Copyright 2013-2020 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap v4.5.0 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-
 /* modified #bd5d38 #162447 343a40 */
 
 :root {
@@ -11273,34 +11261,35 @@ section.separate-section .separate-section-content {
 }
 
 #masthead {
-  background: linear-gradient(to bottom, #e43f5a80, #07cff680), url('../media/images/banners/4.jpg') !important;
+  background: linear-gradient(to bottom, #e43f5abf, #e43f5abf, #e43f5a80, #e43f5a80, #07cff680, #07cff6bf), url('../media/images/banners/4.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed !important;
+  background-attachment: scroll !important;
   height: 100vh !important;
 }
 
 .masthead h1 {
   /* font-family: "Poppins", -apple-system, sans-serif, "Helvetica Neue"; */
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 4.0rem;
+  line-height: 4.0rem;
   background: linear-gradient(to bottom, #337ab7, #337ab7);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-weight: 200;
+  font-weight: 800;
   text-align: left;
+  /* text-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.75) !important; */
 }
 
 .masthead h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   /* font-family: "Poppins", -apple-system, sans-serif, "Helvetica Neue"; */
   max-width: 20rem;
   background: linear-gradient(to bottom, #fff, #fff);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .masthead h4 {
@@ -11324,49 +11313,54 @@ section.separate-section .separate-section-content {
 
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead h1 {
     font-size: 6.0rem;
     line-height: 6.0rem;
   }
 
   .masthead h2 {
+    max-width: 20rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead h1 {
+    font-size: 8.0rem;
+    line-height: 8.0rem;
+  }
+
+  .masthead h2 {
     max-width: 30rem;
-    font-size: 2.0rem;
+    font-size: 3.0rem;
   }
 }
 
 #about-us {
-  background: linear-gradient(to bottom, #07cff680, #e43f5abc), url('../media/images/banners/4.jpg') !important;
+  background: linear-gradient(to bottom, #07cff6bf, #e43f5abf), url('../media/images/banners/2.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #gallery {
-  background: linear-gradient(to bottom, #e43f5abc, #07cff6bc), url('../media/images/banners/1.jpg') !important;
+  background: linear-gradient(to bottom, #e43f5abf, #07cff6bf), url('../media/images/banners/1.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #team {
-  background: linear-gradient(to bottom, #07cff6bc, #e43f5abc), url('../media/images/banners/3.jpg') !important;
+  background: linear-gradient(to bottom, #07cff6bf, #e43f5abf), url('../media/images/banners/3.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 #sponsors {
-  background: linear-gradient(to bottom, #e43f5abc, #07cff6bc), url('../media/images/banners/2.jpg') !important;
+  background: linear-gradient(to bottom, #e43f5abf, #07cff6bf), url('../media/images/banners/2.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 
 .scrolling-wrapper {
@@ -11508,8 +11502,9 @@ section.separate-section .separate-section-content {
 }
 
 .btn-custom-primary {
-  color: #337ab7 !important;
+  color: #ffffff !important;
   background-color: #162447 !important;
+  border-radius: 50px;
 }
 
 .btn-custom-primary:hover {
