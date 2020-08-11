@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!--
-<div class="col-lg-8 text-white py-4 text-center mx-auto">
-    <h1 class="display-4">Bootstrap 4 tabs</h1>
-    <p class="lead mb-0">Build a few custom styled tab variants using Bootstrap 4.</p>
-    <p class="lead">Snippet by <a href="https://bootstrapious.com/snippets" class="text-white">
-        Bootstrapious</a></p>
-</div>
--->
-
 <?php
 include 'classes/department.php';
 include 'classes/sponsor.php';
@@ -150,16 +141,6 @@ include 'data/sponsors.php';
                     <h3 class="mb-5">Memories Never Lost</h3>
                     <div class="grid">
                         <div class="row people">
-                            <!-- <div class="col-md-4 col-lg-3 item">
-                                <a href="Gallery/gallery.php?action=path2018">
-                                    <div class="box rounded"
-                                        style="background-image:url('https://images.unsplash.com/photo-1591445495284-70a8a82e050a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
-                                        <div class="cover">
-                                            <h3 class="name">2019</h3>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div> -->
                             <div class="col-md-4 col-lg-3 item">
                                 <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2018">
                                     <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202018/11.jpg')">
@@ -524,33 +505,9 @@ include 'data/sponsors.php';
         }
     }
     ?>
-    <!-- modal -->
-    <!-- <div class="portfolio-modal modal fade" id="hod-marketing-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close Modal" />
-                </div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-12">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase pb-5">
-                                    FINANCIER
-                                </h2>
-                                <p class="item-intro text-muted" id="purpose-modal-text">
-                                    
-                                </p>
-                                <button class="btn btn-custom-primary" data-dismiss="modal" type="button">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    <?php
+    include 'components/modals.php';
+    ?>
     <div class="portfolio-modal modal fade" id="film-making-workshop-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
