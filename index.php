@@ -485,147 +485,26 @@ include 'data/sponsors.php';
                         Always Listening
                     </h2>
                     <div class="row">
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/armaan-singh-pruthi.jpg" alt="Chairperson" />
-                            <h6 class="text-muted text-center">
-                                Chairperson
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:chairperson@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+919987217296‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/aayush-rathi.jpg" alt="Vice-Chairperson Admin 1" />
-                            <h6 class="text-muted text-center">
-                                Vice-Chairperson Admin 1
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:aayush@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:+919930229847">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/reyansh-jain.jpg" alt="Vice-Chairperson Admin 2" />
-                            <h6 class="text-muted text-center">
-                                Vice-Chairperson Admin 2
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:reyansh@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+919311009750‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/harshvardhan-rungta.jpg" alt="Vice-Chairperson Events 1" />
-                            <h6 class="text-muted text-center">
-                                Vice-Chairperson Events 1
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:harshvardhan@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+917021415454‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/tinish-gupta.jpg" alt="Vice-Chairperson Events 2" />
-                            <h6 class="text-muted text-center">
-                                Vice-Chairperson Events 2
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:tinish@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+918100678446‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/pramiti-vaidya.jpg" alt="HoD Marketing" />
-                            <h6 class="text-muted text-center">
-                                HoD Marketing
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:marketing@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+919619745666‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/samarth-anand.jpg" alt="HoD Food & Collaborations" />
-                            <h6 class="text-muted text-center">
-                                HoD Food & Collaborations
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:foodandcollaborations@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+919999513557‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/diya-maini.jpg" alt="HoD Hospitality" />
-                            <h6 class="text-muted text-center">
-                                HoD Hospitality
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:hospitality@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+919814831300‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/sheel-narsaria.jpg" alt="HoD Public Relations" />
-                            <h6 class="text-muted text-center">
-                                HoD Public Relations
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:publicrelations@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭+917631021777‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
-                        <div class="col-md-3 p-2">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/rishika-singhal.jpg" alt="HoD Proshows" />
-                            <h6 class="text-muted text-center">
-                                HoD Proshows
-                            </h6>
-                            <h6 class="text-muted text-center">
-                                <a class="social-icon p-2" href="mailto:proshows@vaayufest.org">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <a class="social-icon p-2" href="tel:‭‭+918197944776‬">
-                                    <i class="fas fa-phone"></i>
-                                </a>
-                            </h6>
-                        </div>
+                        <?php
+                        foreach ($departmentsContactUs as $department) {
+                            echo '
+                            <div class="col-md-3 p-2">
+                                <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3 power-2" src="media/images/team-original/' . $department->departmentHeadImage . '" alt="Contact - ' . $department->departmentName . '" />
+                                <h6 class="text-muted text-center">
+                                    ' . $department->departmentName . '
+                                </h6>
+                                <h6 class="text-muted text-center">
+                                    <a class="social-icon p-2" href="mailto:' . $department->departmentHeadEmail . '">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                    <a class="social-icon p-2" href="tel:‭' . $department->departmentHeadMobile . '">
+                                        <i class="fas fa-phone"></i>
+                                    </a>
+                                </h6>
+                            </div>
+                            ';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

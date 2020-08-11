@@ -322,3 +322,9 @@ $viceChairpersonEventsTwo = new Department(
 );
 
 $departmentsTopFive = [$chairperson, $viceChairpersonAdminOne, $viceChairpersonAdminTwo, $viceChairpersonEventsOne, $viceChairpersonEventsTwo];
+
+$departmentsContactUs = [
+    $chairperson, $viceChairpersonAdminOne, $viceChairpersonAdminTwo, $viceChairpersonEventsOne, $viceChairpersonEventsTwo,
+    $hospitality, $publicRelations, $marketing, $foodAndCollaborations,
+    $proshows
+];
