@@ -34,7 +34,7 @@ function setModal() {
     }
 };
 
-setPreloader();
+// setPreloader();
 setModal();
 
 // let tl = gsap.timeline({
