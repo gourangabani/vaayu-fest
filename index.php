@@ -18,33 +18,18 @@ include 'data/sponsors.php';
 ?>
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174808309-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-174808309-1');
-    </script>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Vaayu is a national level college festival of NMIMS" />
-    <meta name="author" content="Vaayu is a national level college festival of NMIMS" />
-    <meta name="keywords" content="Vaayu is a national level college festival of NMIMS" />
+    <?php
+    include 'components/meta.php';
+    ?>
+    <meta name="description" content="What was conceived out of pure passion for empowering the youth of our nation, has now transformed into one of the fastest growing cultural festivals of India. Boasting an annual footfall of about 35000, Vaayu is so much more than what meets the eye: an assemblage of people from throughout the country, an opportunity to jump start your career under the guidance of the most renowned entities, a median that promotes youth empowerment through every facet of its activities, but most importantly, it is a place where everlasting bonds are forged." />
+    <meta name="author" content="Vaayu is a national level college festival of NMIMS." />
+    <meta name="keywords" content="Vaayu is a national level college festival of NMIMS." />
     <meta property="og:title" content="Vaayu '20" />
     <meta property="og:description" content="Vaayu is a national level college festival of NMIMS" />
     <meta property="og:image" content="assets/img/vaayu-20-logo-white.png" />
     <title>
         Vaayu Fest - Home
     </title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
     <?php
     include 'components/stylesheets.php';
     ?>
@@ -520,11 +505,11 @@ include 'data/sponsors.php';
                                 <div class="col-lg-12">
                                     <div class="modal-body">
                                         <h2 class="text-uppercase pb-5">'
-                                            . $department->departmentName .
-                                        '</h2>
+                . $department->departmentName .
+                '</h2>
                                         <p class="item-intro text-muted" id="purpose-modal-text">'
-                                            . $department->departmentDescription .
-                                        '</p>
+                . $department->departmentDescription .
+                '</p>
                                         <button class="btn btn-custom-primary" data-dismiss="modal" type="button">
                                             Close
                                         </button>
