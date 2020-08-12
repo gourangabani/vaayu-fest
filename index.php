@@ -439,34 +439,8 @@ include 'data/sponsors.php';
     }
     ?>
     <?php
-    // include 'components/modals.php';
+    include 'components/modals.php';
     ?>
-    <div class="portfolio-modal modal fade" id="film-making-workshop-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <img src="assets/img/close-icon.svg" alt="Close Modal" />
-                </div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-2"></div>
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <h2 class="text-uppercase pb-5">
-                                    Film Making Workshop By Mr. Aditya Kripalani
-                                </h2>
-                                <a class="btn btn-custom-primary w-100 mb-5" href="upcoming/film-making-workshop.html" target="_blank">
-                                    Register Now
-                                </a>
-                                <img src="media/images/events/proshows-film-making-workshop.jpg" alt="Film Making Workshop" />
-                            </div>
-                        </div>
-                        <div class="col-lg-2"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <?php
     include 'components/scripts.php';
     ?>

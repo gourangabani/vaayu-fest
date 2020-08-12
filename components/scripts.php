@@ -14,7 +14,7 @@
 <!-- not to be cached -->
 <script>
     function Modal() {
-        var custom_modal = $('#film-making-workshop-modal');
+        var custom_modal = $('#freshers-modal');
         setTimeout(function() {
             custom_modal.modal();
         }, 10000);
@@ -25,7 +25,7 @@
             sessionStorage.setItem('doNotShowModal', true);
             Modal();
         } else {
-            $('.film-making-workshop-modal').hide();
+            $('.freshers-modal').hide();
         }
     };
 
