@@ -15,7 +15,7 @@
                                 Check out what we've got for you. In a nutshell, memories that'd last a lifetime.
                             </p>
                             <a href="freshers.php">
-                                <button class="btn btn-custom-primary w-50" data-dismiss="modal" type="button">
+                                <button class="btn btn-custom-primary w-50" type="button">
                                     Get Empowered!
                                 </button>
                             </a>

@@ -37,7 +37,7 @@
                         <div class="col-md-4 text-center">
                             <h2 class="mb-5">Brochure</h2>
                             <a href="media/uploads/vaayu-20-fy-brochure.pdf">
-                                <button class="btn btn-custom-primary w-50" data-dismiss="modal" type="button">
+                                <button class="btn btn-custom-primary w-50" type="button">
                                     Here!
                                 </button>
                             </a>
