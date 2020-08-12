@@ -5,35 +5,53 @@
         <span class="d-none d-lg-block"><img class="img-fluid mx-auto mb-2" src="assets/img/vaayu-20-logo-transparent.png" alt="Logo" /></span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about-us">
-                    About Us
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#gallery">
-                    Gallery
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#team">
-                    Team
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#sponsors">
-                    Sponsors
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact-us">
-                    Contact Us
-                </a>
-            </li>
-        </ul>
-    </div>
+    <?php
+    if ($_SERVER['REQUEST_URI'] == '/freshers.php') {
+        echo '
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php">
+                        Home
+                    </a>
+                </li>
+            </ul>
+        </div>
+        ';
+    } else {
+        echo '
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about-us">
+                        About Us
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#gallery">
+                        Gallery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#team">
+                        Team
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#sponsors">
+                        Sponsors
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact-us">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+        </div>
+        ';
+    }
+    ?>
     <div class="social-icons">
         <a class="social-icon" href="https://instagram.com/vaayufest"><i class="fab fa-instagram"></i></a>
         <a class="social-icon" href="https://facebook.com/VaayuFest"><i class="fab fa-facebook-f"></i></a>
