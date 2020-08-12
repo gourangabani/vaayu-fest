@@ -34,19 +34,19 @@
             <div class="separate-section-content">
                 <div class="p-5 bg-white rounded shadow mb-5">
                     <div class="row">
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-6 text-center">
                             <h2 class="mb-5">Brochure</h2>
                             <a href="media/uploads/vaayu-20-fy-brochure.pdf">
                                 <button class="btn btn-custom-primary w-50" type="button">
-                                    Here!
+                                    Welcome Onboard!
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-6 text-center">
                             <h2 class="mb-5">A Small Surprise</h2>
                             <a href="https://www.youtube.com/watch?v=tnKtqrRKud4" target="_blank">
                                 <button class="btn btn-custom-primary w-50" type="button">
-                                    @Vaayu. Promised.
+                                    Memories Forever
                                 </button>
                             </a>
                         </div>
