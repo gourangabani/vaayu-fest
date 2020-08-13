@@ -11514,7 +11514,6 @@ section.separate-section .separate-section-content {
 
 .bg-gradient {
   background: linear-gradient(to bottom, #07cff6bf, #e43f5abf), url('../media/images/banners/3.jpg') !important;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
