@@ -8,13 +8,13 @@
 <!-- gsap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
 <!-- gsap scroll -->
-<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>js/ScrollTrigger.js"></script>
+<script src="<?php echo $base; ?>js/ScrollTrigger.js"></script>
 <!-- gsap text -->
-<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>js/TextPlugin.js"></script>
+<script src="<?php echo $base; ?>js/TextPlugin.js"></script>
 <!-- vendor js -->
-<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>js/vendor.js"></script>
+<script src="<?php echo $base; ?>js/vendor.js"></script>
 <!-- custom js -->
-<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>js/custom.js"></script>
+<script src="<?php echo $base; ?>js/custom.js"></script>
 <!-- not to be cached -->
 <script>
     function Modal() {

@@ -1,7 +1,7 @@
 <?php
 $base = '';
 if ($_SERVER['SERVER_NAME'] == 'localhost') {
-    $base = 'vaayu-fest/';
+    $base = 'http://' . $_SERVER['SERVER_NAME'] . ':8888/vaayu-fest/';
 } else {
-    $base = '';
+    $base = 'https://' . $_SERVER['SERVER_NAME'] . '/';
 }
