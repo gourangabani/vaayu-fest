@@ -32,8 +32,12 @@ include_once './data/sponsors.php';
         <!-- masthead -->
         <section class="separate-section masthead 100vh" id="masthead">
             <div class="separate-section-content container">
-                <h1 class="typewriter">Vaayu '20</h1>
-                <h2 class="typewriter">Get Empowered</h2>
+                <h1 class="typewriter">
+                    Vaayu '20
+                </h1>
+                <h2 class="typewriter">
+                    Get Empowered
+                </h2>
                 <hr>
             </div>
         </section>
@@ -41,8 +45,12 @@ include_once './data/sponsors.php';
         <section class="separate-section container" id="about-us">
             <div class="separate-section-content">
                 <div class="p-5 bg-white rounded shadow mb-5">
-                    <h2 class="mb-5">About Us</h2>
-                    <h3 class="mb-5">Get Empowered</h3>
+                    <h2 class="mb-5">
+                        About Us
+                    </h2>
+                    <h3 class="mb-5">
+                        Get Empowered
+                    </h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <p>
@@ -63,15 +71,21 @@ include_once './data/sponsors.php';
         <section class="separate-section container" id="gallery">
             <div class="separate-section-content">
                 <div class="p-5 bg-white rounded shadow mb-5">
-                    <h2 class="mb-5">Gallery</h2>
-                    <h3 class="mb-5">Memories Never Lost</h3>
+                    <h2 class="mb-5">
+                        Gallery
+                    </h2>
+                    <h3 class="mb-5">
+                        Memories Never Lost
+                    </h3>
                     <div class="grid">
                         <div class="row people">
                             <div class="col-md-4 col-lg-3 item">
                                 <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2018">
                                     <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202018/11.jpg')">
                                         <div class="cover">
-                                            <h3 class="name">2018</h3>
+                                            <h3 class="name">
+                                                2018
+                                            </h3>
                                         </div>
                                     </div>
                                 </a>
@@ -80,7 +94,9 @@ include_once './data/sponsors.php';
                                 <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2017">
                                     <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202017/1.jpg')">
                                         <div class="cover">
-                                            <h3 class="name">2017</h3>
+                                            <h3 class="name">
+                                                2017
+                                            </h3>
                                         </div>
                                     </div>
                                 </a>
@@ -89,7 +105,9 @@ include_once './data/sponsors.php';
                                 <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2016">
                                     <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202016/(1).jpg')">
                                         <div class="cover">
-                                            <h3 class="name">2016</h3>
+                                            <h3 class="name">
+                                                2016
+                                            </h3>
                                         </div>
                                     </div>
                                 </a>
@@ -98,7 +116,9 @@ include_once './data/sponsors.php';
                                 <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2015">
                                     <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202015/(10).jpg')">
                                         <div class="cover">
-                                            <h3 class="name">2015</h3>
+                                            <h3 class="name">
+                                                2015
+                                            </h3>
                                         </div>
                                     </div>
                                 </a>
@@ -107,7 +127,9 @@ include_once './data/sponsors.php';
                                 <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=pathcelebrities">
                                     <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202015/(12).jpg')">
                                         <div class="cover">
-                                            <h3 class="name">Celebrities</h3>
+                                            <h3 class="name">
+                                                Celebrities
+                                            </h3>
                                         </div>
                                     </div>
                                 </a>
@@ -129,8 +151,7 @@ include_once './data/sponsors.php';
                     <ul id="team-tab" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
                         <li class="nav-item flex-sm-fill">
                             <a id="top-5-tab" data-toggle="tab" href="#top-5" class="nav-link border-0 text-uppercase font-weight-bold active">
-                                <i class="fas fa-star">
-                                </i>
+                                <i class="fas fa-star"></i>
                             </a>
                         </li>
                         <li class="nav-item flex-sm-fill">
