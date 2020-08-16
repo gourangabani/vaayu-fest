@@ -17,7 +17,6 @@ include 'data/sponsors.php';
     <meta name="keywords" content="Vaayu is a national level college festival of NMIMS." />
     <meta property="og:title" content="Vaayu '20" />
     <meta property="og:description" content="Vaayu is a national level college festival of NMIMS" />
-    <meta property="og:image" content="assets/img/vaayu-20-logo-white.png" />
     <title>
         Vaayu Fest - Home
     </title>

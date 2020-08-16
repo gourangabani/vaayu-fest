@@ -10,7 +10,6 @@
     <meta name="keywords" content="Vaayu is a national level college festival of NMIMS." />
     <meta property="og:title" content="Vaayu '20 - For Freshers" />
     <meta property="og:description" content="Just a place to create life-long memories. With a warm heart, welcome onboard." />
-    <meta property="og:image" content="assets/img/vaayu-20-logo-white.png" />
     <title>
         Vaayu Fest - Freshers
     </title>
