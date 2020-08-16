@@ -7,10 +7,14 @@
 <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 <!-- gsap -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
-<!-- custom js -->
-<script src="js/custom.js"></script>
+<!-- gsap scroll -->
+<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>/vaayu-fest/js/ScrollTrigger.js"></script>
+<!-- gsap text -->
+<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>/vaayu-fest/js/TextPlugin.js"></script>
 <!-- vendor js -->
-<script src="js/vendor.js"></script>
+<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>/vaayu-fest/js/vendor.js"></script>
+<!-- custom js -->
+<script src="<?php $_SERVER['DOCUMENT_ROOT'] . '/' . $base; ?>/vaayu-fest/js/custom.js"></script>
 <!-- not to be cached -->
 <script>
     function Modal() {
