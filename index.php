@@ -2,10 +2,10 @@
 <html lang="en">
 
 <?php
-include 'classes/department.php';
-include 'classes/sponsor.php';
-include 'data/departments.php';
-include 'data/sponsors.php';
+include './classes/department.php';
+include './classes/sponsor.php';
+include './data/departments.php';
+include './data/sponsors.php';
 ?>
 
 <head>
@@ -26,12 +26,8 @@ include 'data/sponsors.php';
 </head>
 
 <body id="page-top">
-    <div class="preloader">
-        <video autoplay muted class="preloader">
-            <source src="assets/preloader.mp4" type="video/mp4">
-        </video>
-    </div>
     <?php
+    include 'components/preloader.php';
     include 'components/navigation.php';
     ?>
     <div class="container-fluid">

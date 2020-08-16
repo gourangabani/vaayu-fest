@@ -19,12 +19,8 @@
 </head>
 
 <body id="page-top">
-    <div class="preloader">
-        <video autoplay muted class="preloader">
-            <source src="assets/preloader.mp4" type="video/mp4">
-        </video>
-    </div>
     <?php
+    include 'components/preloader.php';
     include 'components/navigation.php';
     ?>
     <div class="container-fluid">
