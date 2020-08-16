@@ -1,7 +1,5 @@
 <?php
 
-include '../classes/sponsor.php';
-
 $dilipBuildconLtd = new Sponsor(
     'Dilip Buildcon Ltd',
     categories::ilu,
@@ -159,7 +157,7 @@ $sponsors = [
     $telexAdvertisment, $ufo, $lokmat, $fistoSports, $youthIncorporated, $theHindu, $navBharat, $gobbleGrams
 ];
 
-$categories = [$sponsorsILU, $sponsorsGeneral, $sponsorsMassMedia];
 $sponsorsILU = [$dilipBuildconLtd, $idemitsu, $inditrade, $kreativeKeeda, $sbi, $tribeVibe, $navBharat, $vijaySales];
 $sponsorsGeneral = [$bodyCanvas, $charaghDin, $dellTechnologies, $denver, $emeveta, $iCreate, $kongsNutrition, $moneyControl, $poshn, $schbang, $smaaash, $starbucks, $uniball, $zomato];
 $sponsorsMassMedia = [$telexAdvertisment, $ufo, $lokmat, $fistoSports, $youthIncorporated, $theHindu, $navBharat, $gobbleGrams];
+$categories = [$sponsorsILU, $sponsorsGeneral, $sponsorsMassMedia];

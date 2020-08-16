@@ -1,7 +1,5 @@
 <?php
 
-include '../classes/department.php';
-
 $hospitality = new Department(
     1,
     'hospitality',
@@ -250,11 +248,11 @@ $departments = [
     $performingArts, $proshows, $informals, $gamingAndSports
 ];
 
-$verticals = [$departmentsAdminOne, $departmentsAdminTwo, $departmentsEventsOne, $departmentsEventsTwo];
 $departmentsAdminOne = [$hospitality, $publicRelations, $marketing, $foodAndCollaborations, $financier];
 $departmentsAdminTwo = [$creatives, $security, $logistics, $printingAndSupplies, $digitalCommunications, $digitalWorks];
 $departmentsEventsOne = [$managementEvents, $externals, $innovations, $fineArts, $literaryArts];
 $departmentsEventsTwo = [$performingArts, $proshows, $informals, $gamingAndSports];
+$verticals = [$departmentsAdminOne, $departmentsAdminTwo, $departmentsEventsOne, $departmentsEventsTwo];
 
 $chairperson = new Department(
     21,
