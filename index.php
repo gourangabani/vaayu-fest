@@ -426,18 +426,18 @@ include_once './data/sponsors.php';
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="close-modal" data-dismiss="modal">
-                            <img src="assets/img/close-icon.svg" alt="Close Modal" />
+                            <img src="' . $base . 'assets/img/close-icon.svg" alt="Close Modal" />
                         </div>
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12">
                                     <div class="modal-body">
-                                        <h2 class="text-uppercase pb-5">'
-                . $department->departmentName .
-                '</h2>
-                                        <p class="item-intro text-muted" id="purpose-modal-text">'
-                . $department->departmentDescription .
-                '</p>
+                                        <h2 class="text-uppercase pb-5">
+                                            ' . $department->departmentName . '
+                                        </h2>
+                                        <p class="item-intro text-muted" id="purpose-modal-text">
+                                            ' . $department->departmentDescription . '
+                                        </p>
                                         <button class="btn btn-custom-primary" data-dismiss="modal" type="button">
                                             Close
                                         </button>
