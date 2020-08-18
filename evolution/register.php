@@ -19,11 +19,17 @@ include_once './data/eventsEvolution.php';
     <?php
     include '../components/stylesheets.php';
     ?>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
+    <div class="preloader">
+        <video autoplay muted class="preloader">
+            <source src="<?php echo $base; ?>media/evolution/preloader.mp4" type="video/mp4">
+        </video>
+    </div>
     <?php
-    include '../components/preloader.php';
     include '../components/navigation.php';
     ?>
     <div class="container-fluid">
@@ -50,9 +56,8 @@ include_once './data/eventsEvolution.php';
                                 // redirect
                             }
                             ?>
-                            <hr class="my-5">
-                            <div class="d-flex justify-content-center">
-                                <div id="progress-placeholder" class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                            <div class="d-flex justify-content-center mt-5">
+                                <div id="progress-placeholder" class="" style="width: 3rem; height: 3rem;" role="status">
                                     <span class="sr-only">Loading...</span>
                                 </div>
                             </div>
@@ -67,6 +72,7 @@ include_once './data/eventsEvolution.php';
     include '../components/scripts.php';
     ?>
     <script src="js/ajax.js"></script>
+    <script src="js/custom.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
     <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 </body>

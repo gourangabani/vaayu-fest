@@ -8,7 +8,6 @@ $marketingManiac = new EventEvolution(
     '',
     'marketing-maniac.jpg',
     eventType::individual,
-    'Externals'
 );
 
 $pixels = new EventEvolution(
@@ -18,8 +17,7 @@ $pixels = new EventEvolution(
     'Pixels',
     '',
     'pixels.jpg',
-    eventType::individual,
-    'Digital Works'
+    eventType::individual
 );
 
 $vlogInn = new EventEvolution(
@@ -29,8 +27,7 @@ $vlogInn = new EventEvolution(
     'Vlog-Inn',
     '',
     'vlog-inn.jpg',
-    eventType::individual,
-    ''
+    eventType::individual
 );
 
 $beYou = new EventEvolution(
@@ -40,8 +37,7 @@ $beYou = new EventEvolution(
     'BeYou',
     '',
     'be-you.jpg',
-    eventType::individual,
-    'Informals'
+    eventType::individual
 );
 
 $escapeIn = new EventEvolution(
@@ -51,8 +47,7 @@ $escapeIn = new EventEvolution(
     'Escape In',
     '',
     'escape-in.jpg',
-    eventType::team,
-    ''
+    eventType::team
 );
 
 $stepInStyle = new EventEvolution(
@@ -62,8 +57,7 @@ $stepInStyle = new EventEvolution(
     'Step In Style',
     '',
     'step-in-style.jpg',
-    eventType::individual,
-    'Performing Arts'
+    eventType::individual
 );
 
 $bollywoodzilla = new EventEvolution(
@@ -73,8 +67,7 @@ $bollywoodzilla = new EventEvolution(
     'Bollywoodzilla',
     '',
     'bollywoodzilla.jpg',
-    eventType::individual,
-    'Performing Arts'
+    eventType::individual
 );
 
 $hustleAndMuscle = new EventEvolution(
@@ -84,8 +77,7 @@ $hustleAndMuscle = new EventEvolution(
     'Hustle & Muscle',
     '',
     'hustle-and-muscle.jpg',
-    eventType::individual,
-    'Gaming & Sports'
+    eventType::individual
 );
 
 $versusVersusVersus = new EventEvolution(
@@ -95,8 +87,7 @@ $versusVersusVersus = new EventEvolution(
     'Versus Versus Versus',
     '',
     'versus-versus-versus.jpg',
-    eventType::individual,
-    'Literary Arts'
+    eventType::individual
 );
 
 $writeCameraAction = new EventEvolution(
@@ -106,8 +97,7 @@ $writeCameraAction = new EventEvolution(
     'Write, Camera, Action',
     '',
     'write-camera-action.jpg',
-    eventType::team,
-    'Performing Arts'
+    eventType::team
 );
 
 $stonks = new EventEvolution(
@@ -117,8 +107,7 @@ $stonks = new EventEvolution(
     'Stonks!',
     '',
     'stonks.jpg',
-    eventType::individual,
-    'Management Events'
+    eventType::individual
 );
 
 $crisimulation = new EventEvolution(
@@ -128,8 +117,7 @@ $crisimulation = new EventEvolution(
     'Crisimulation',
     '',
     'crisimulation.jpg',
-    eventType::team,
-    'Innovations'
+    eventType::team
 );
 
 $disenoEvento = new EventEvolution(
@@ -139,8 +127,7 @@ $disenoEvento = new EventEvolution(
     'Diseno Evento',
     '',
     'diseno-evento.jpg',
-    eventType::individual,
-    'Fine Arts'
+    eventType::individual
 );
 
 $evolutionEvents = [$marketingManiac, $pixels, $vlogInn, $beYou, $escapeIn, $stepInStyle, $bollywoodzilla, $hustleAndMuscle, $versusVersusVersus, $writeCameraAction, $stonks, $crisimulation, $disenoEvento];

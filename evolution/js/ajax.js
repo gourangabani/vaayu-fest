@@ -128,7 +128,7 @@ if ($('#register-individual-evolution-form').length != 0) {
                 responsePlaceholder.html(response.message);
             });
     })
-} else if ($('#register-team-crisimulation-form').length != 0) {
+} else if ($('#register-team-crisimulation-evolution-form').length != 0) {
     // identify the form and the response template
     var submittedForm = $('#register-team-crisimulation-evolution-form');
     // event listener for when submit is clicked upon
@@ -176,7 +176,7 @@ if ($('#register-individual-evolution-form').length != 0) {
                 responsePlaceholder.html(response.message);
             });
     })
-} else if ($('#register-team-escape-in-form').length != 0) {
+} else if ($('#register-team-escape-in-evolution-form').length != 0) {
     // identify the form and the response template
     var submittedForm = $('#register-team-escape-in-evolution-form');
     // event listener for when submit is clicked upon

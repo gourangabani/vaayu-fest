@@ -140,7 +140,7 @@ class Utilities
         try {
             if (strlen($mobile) == 10) {
                 $mobile = $defaultCountryCode . $mobile;
-            } elseif (strlen($mobile) != 12) {
+            } elseif (strlen($mobile) != 12 || strlen($mobile) != 0) {
                 throw new Exception('Please enter a valid mobile.');
             }
         } catch (Exception $exception) {
@@ -197,7 +197,7 @@ if ($_POST['request'] == 'evolution') {
                     }
                 }
                 $response['status'] = TRUE;
-                $response['message'] = 'Registered successfully';
+                $response['message'] = 'Registered successfully.';
             } catch (Exception $exception) {
                 $response['status'] = FALSE;
                 $response['message'] = 'Sorry, there was an error: [' . $exception . '].';
@@ -216,7 +216,7 @@ if ($_POST['request'] == 'evolution') {
                 };
                 $data['teamMemberMobiles'] = '';
                 foreach ($_POST['team-member-mobile'] as $teamMemberMobile) {
-                    $currentTeamMemberMobile = $utilities->sanitiseText($teamMemberMobile);
+                    $currentTeamMemberMobile = $utilities->sanitiseValidateMobile($teamMemberMobile, '91');
                     if ($currentTeamMemberMobile == FALSE) {
                         throw new Exception('Please enter a valid mobile: [' . $teamMemberMobile . '].');
                     } else {
