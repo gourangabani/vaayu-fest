@@ -252,7 +252,7 @@ include_once './data/eventsEvolution.php';
                                         <br>
                                         [' . $evolutionEvent->eventName . ']
                                     </h2>
-                                    <p class="item-intro text-muted" id="purpose-modal-text">
+                                    <p>
                                         ' . $evolutionEvent->eventDescription . '
                                     </p>
                                     <button class="btn btn-custom-primary" data-dismiss="modal" type="button">
