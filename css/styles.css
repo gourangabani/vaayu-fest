@@ -11349,15 +11349,29 @@ section.separate-section .separate-section-content {
   background-attachment: scroll;
 }
 
-#team {
+#events {
   background: linear-gradient(to bottom, #07cff6bf, #e43f5abf), url('../media/images/banners/3.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-attachment: scroll;
 }
 
+#team {
+  background: linear-gradient(to bottom, #e43f5abf, #07cff6bf), url('../media/images/banners/4.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: scroll;
+}
+
 #sponsors {
-  background: linear-gradient(to bottom, #e43f5abf, #07cff6bf), url('../media/images/banners/2.jpg') !important;
+  background: linear-gradient(to bottom, #07cff6bf, #e43f5abf), url('../media/images/banners/3.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-attachment: scroll;
+}
+
+#contact-us {
+  background: linear-gradient(to bottom, #e43f5abf, #07cff6bf), url('../media/images/banners/4.jpg') !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-attachment: scroll;

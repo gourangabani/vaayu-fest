@@ -25,6 +25,11 @@ require 'developmentMachineLogic.php';
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#events">
+                        Events
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#team">
                         Team
                     </a>

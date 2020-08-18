@@ -138,6 +138,36 @@ include_once './data/sponsors.php';
                     </div>
                 </div>
         </section>
+        <!-- events -->
+        <section class="separate-section container" id="events">
+            <div class="separate-section-content">
+                <div class="p-5 bg-white rounded shadow mb-5">
+                    <h2 class="mb-5">
+                        Events
+                    </h2>
+                    <h3 class="mb-5">
+                        Empowering Imagination. Creating Impact. Go Vaayu!
+                    </h3>
+                    <div class="grid">
+                        <div class="row people">
+                            <div class="col-lg-4 item">
+                                <a href="evolution/">
+                                    <div class="box rounded" style="background-image:url('./media/images/events/evolution.jpg')">
+                                        <div class="cover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 item">
+                                <a data-toggle="modal" href="#qadar-modal">
+                                    <div class="box rounded" style="background-image:url('./media/images/events/qadar.jpg')">
+                                        <div class="cover"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
         <!-- team -->
         <section class="separate-section container" id="team">
             <div class="separate-section-content">
@@ -435,7 +465,7 @@ include_once './data/sponsors.php';
                                         <h2 class="text-uppercase pb-5">
                                             ' . $department->departmentName . '
                                         </h2>
-                                        <p class="item-intro text-muted" id="purpose-modal-text">
+                                        <p class="item-intro text-muted">
                                             ' . $department->departmentDescription . '
                                         </p>
                                         <button class="btn btn-custom-primary" data-dismiss="modal" type="button">

@@ -18,18 +18,18 @@
 <!-- not to be cached -->
 <script>
     function Modal() {
-        var custom_modal = $('#freshers-modal');
+        var custom_modal = $('#evolution-modal');
         setTimeout(function() {
             custom_modal.modal();
         }, 10000);
     }
 
     function setModal() {
-        if (!sessionStorage.getItem('doNotShowModal')) {
-            sessionStorage.setItem('doNotShowModal', true);
+        if (!sessionStorage.getItem('doNotShowEvolutionModal')) {
+            sessionStorage.setItem('doNotShowEvolutionModal', true);
             Modal();
         } else {
-            $('.freshers-modal').hide();
+            $('.evolution-modal').hide();
         }
     };
 
