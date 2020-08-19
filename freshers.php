@@ -27,7 +27,17 @@
             <div class="separate-section-content">
                 <div class="p-5 bg-white rounded shadow mb-5">
                     <div class="row">
-                        <div class="col-md-6 text-center p-3">
+                        <div class="col-md-4 text-center p-3">
+                            <h2 class="mb-5">
+                                Member Applications
+                            </h2>
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLScrjnxPN1Oq8_dYhBy_nktWG1Go9AI4Dt2iHpCUACNaiSucPg/viewform?usp=sf_">
+                                <button class="btn btn-custom-primary w-50" type="button">
+                                    Apply Now
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-4 text-center p-3">
                             <h2 class="mb-5">
                                 Brochure
                             </h2>
@@ -37,7 +47,7 @@
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-6 text-center p-3">
+                        <div class="col-md-4 text-center p-3">
                             <h2 class="mb-5">
                                 A Small Surprise
                             </h2>
