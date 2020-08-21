@@ -9,8 +9,9 @@ class EventEvolution
     public $eventDescription;
     public $eventPoster;
     public $eventType;
+    public $eventRegistrationsOpen;
 
-    public function __construct($eventId, $eventSlug, $eventName, $eventBrochureTitle, $eventDescription, $eventPoster, $eventType)
+    public function __construct($eventId, $eventSlug, $eventName, $eventBrochureTitle, $eventDescription, $eventPoster, $eventType, $eventRegistrationsOpen)
     {
         $this->eventId = $eventId;
         $this->eventSlug = $eventSlug;
@@ -19,6 +20,7 @@ class EventEvolution
         $this->eventDescription = $eventDescription;
         $this->eventPoster = $eventPoster;
         $this->eventType = $eventType;
+        $this->eventRegistrationsOpen = $eventRegistrationsOpen;
     }
 }
 

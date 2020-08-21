@@ -24,7 +24,7 @@
         </h3>
         <?php
         foreach ($evolutionEvents as $evolutionEvent) {
-            if ($evolutionEvent->eventType == eventType::individual) {
+            if ($evolutionEvent->eventType == eventType::individual && $evolutionEvent->eventRegistrationsOpen == true) {
                 echo '
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" name="events[]" value="' . $evolutionEvent->eventSlug . '" id="' . $evolutionEvent->eventSlug . '-checkbox" />
