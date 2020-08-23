@@ -146,7 +146,7 @@ include_once './data/sponsors.php';
                         Events
                     </h2>
                     <h3 class="mb-5">
-                        Empowering Imagination. Creating Impact. Go Vaayu!
+                        Empowering Imagination. Creating Impact.
                     </h3>
                     <div class="grid">
                         <div class="row people">
