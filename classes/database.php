@@ -5,6 +5,9 @@ class Database
     // connection variable
     public $pdo;
     // database information
+    // private $databaseHost = '127.0.0.1';
+    // private $databaseName = 'enfinkjf_vaayu_2019';
+    // private $databaseCharacterSet = 'utf8mb4';
     private $databaseHost = 'localhost';
     private $databaseName = 'enfinkjf_vaayu_2019';
     private $databaseCharacterSet = 'utf8mb4';
