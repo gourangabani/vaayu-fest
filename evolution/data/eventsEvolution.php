@@ -8,7 +8,7 @@ $marketingManiac = new EventEvolution(
     'Know the art of selling? Ready to do it in a more challenging environment with the opportunity to bag an internship in one of the top marketing firms in India. Marketing Maniac is an event which will test your marketing skills and give you an experience of how marketing is done in the real world.',
     'marketing-maniac.jpg',
     eventType::individual,
-    true
+    false
 );
 
 $pixels = new EventEvolution(
