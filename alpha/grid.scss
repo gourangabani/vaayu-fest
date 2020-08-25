@@ -3,7 +3,7 @@ $bootstrap-md: 768px;
 $bootstrap-lg: 992px;
 $bootstrap-xl: 1200px;
 
-#gallery {
+#gallery-custom {
   
   img {
     height: 75vw;
@@ -37,7 +37,7 @@ $bootstrap-xl: 1200px;
   transition: 0.3s;
 }
 
-#gallery.custom {
+#gallery-custom {
   padding: 0 15px;
   
   img {
@@ -51,7 +51,7 @@ $bootstrap-xl: 1200px;
   }
 }
 
-#exampleModal.custom {
+#galleryModal {
   .modal-content {
     background: none;
     border: none;
