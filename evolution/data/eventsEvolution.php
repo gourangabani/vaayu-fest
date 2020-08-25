@@ -74,7 +74,7 @@ $bollywoodzilla = new EventEvolution(
     'Gear up and get your vocal cords ready for Vaayu\'s first online Bollywood solo singing competition! Show off your mashups, harmonies & medleys and leave an impression with your voice! Make your voice your wand and cast your spell singing from your heart, winning over everyone.',
     'bollywoodzilla.jpg',
     eventType::individual,
-    true
+    false
 );
 
 $hustleAndMuscle = new EventEvolution(
@@ -85,7 +85,7 @@ $hustleAndMuscle = new EventEvolution(
     'One of the most stimulating and testing event at Vaayu 20, this Fitness event allows you to feature your quality through home exercise with no apparatus. Event which revolves around continuing to remain fit regardless, when everyone is stuck at home and endeavouring to make the most out of it, squash hard!',
     'hustle-and-muscle.jpg',
     eventType::individual,
-    true
+    false
 );
 
 $versusVersusVersus = new EventEvolution(
