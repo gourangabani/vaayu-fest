@@ -143,4 +143,37 @@ $disenoEvento = new EventEvolution(
     true
 );
 
-$evolutionEvents = [$marketingManiac, $pixels, $vlogInn, $beYou, $escapeIn, $stepInStyle, $bollywoodzilla, $hustleAndMuscle, $versusVersusVersus, $writeCameraAction, $stonks, $crisimulation, $disenoEvento];
+$talkShow = new EventEvolution(
+    14,
+    'talk-show',
+    'With Maria Goretti',
+    'Talk Show',
+    '26th August, 16:00 IST',
+    'talk-show.jpg',
+    eventType::workshop,
+    true
+);
+
+$mobilePhotographyWorkshop = new EventEvolution(
+    15,
+    'mobile-photography-workshop',
+    'With Mr. Asif Khan',
+    'Mobile Photography Workshop',
+    '27th August, 17:00 IST',
+    'mobile-photography-workshop.jpg',
+    eventType::workshop,
+    true
+);
+
+$danceWorkshop = new EventEvolution(
+    16,
+    'dance-workshop',
+    'With Shiamak',
+    'Dance Workshop',
+    '31st August',
+    'dance-workshop.jpg',
+    eventType::workshop,
+    true
+);
+
+$evolutionEvents = [$marketingManiac, $pixels, $vlogInn, $beYou, $escapeIn, $stepInStyle, $bollywoodzilla, $hustleAndMuscle, $versusVersusVersus, $writeCameraAction, $stonks, $crisimulation, $disenoEvento, $talkShow, $mobilePhotographyWorkshop, $danceWorkshop];

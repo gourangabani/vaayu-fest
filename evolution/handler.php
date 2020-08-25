@@ -7,7 +7,8 @@ class Evolution
 
     public function __construct()
     {
-        $this->database = new Database('root', 'root');
+        $this->database = new Database('enfinkjf_vaayu19', '147852369');
+        // $this->database = new Database('root', 'root');
     }
     public function registerIndividual(
         $name,
@@ -116,6 +117,56 @@ class Evolution
             return json_encode($query->fetch(PDO::FETCH_OBJ));
         }
     }
+
+    public function registerWorkshop(
+        $name,
+        $college,
+        $email,
+        $mobile,
+        $events
+    ) {
+        if (isset($name)) {
+            $query = $this->database->run(
+                "INSERT INTO tableRegisterWorkshopEvolution (name, college, email, mobile, events)
+                VALUES (:name, :college, :email, :mobile, :events);",
+                [
+                    'name' => $name,
+                    'college' => $college,
+                    'email' => $email,
+                    'mobile' => $mobile,
+                    'events' => $events
+                ]
+            );
+        }
+    }
+
+    public function countWorkshopEmail(
+        $email
+    ) {
+        if (isset($email)) {
+            $query = $this->database->run(
+                "SELECT COUNT(email) AS countWorkshopEmail FROM tableRegisterWorkshopEvolution WHERE email = :email;",
+                [
+                    'email' => $email
+                ]
+            );
+            return json_encode($query->fetch(PDO::FETCH_OBJ));
+        }
+    }
+
+    public function countWorkshopMobile(
+        $mobile
+    ) {
+        if (isset($mobile)) {
+            $query = $this->database->run(
+                "SELECT COUNT(mobile) AS countWorkshopMobile FROM tableRegisterWorkshopEvolution WHERE mobile = :mobile;",
+                [
+                    'mobile' => $mobile
+                ]
+            );
+            return json_encode($query->fetch(PDO::FETCH_OBJ));
+        }
+    }
 }
 
 class Utilities
@@ -188,7 +239,7 @@ if ($_POST['request'] == 'evolution') {
                             $data['college'],
                             $data['email'],
                             $data['mobile'],
-                            $data['events'],
+                            $data['events']
                         );
                         $response['status'] = TRUE;
                         $response['message'] = 'Registered successfully.';
@@ -200,7 +251,12 @@ if ($_POST['request'] == 'evolution') {
                 $response['message'] = 'Registered successfully.';
             } catch (Exception $exception) {
                 $response['status'] = FALSE;
-                $response['message'] = 'Sorry, there was an error: [' . $exception . '].';
+                $response['message'] = 'Sorry, there was an error: ' . $exception . '.';
+                $response['message'] = str_replace('Exception: ', '', $response['message']);
+                $response['message'] = str_replace(' in /home/enfinkjf/public_html/vaayufest.org/evolution/handler.php:', '', $response['message']);
+                $response['message'] = str_replace(' in /Users/gourangabani/Developer/admin/localhost/vaayu-fest/evolution/handler.php:', '', $response['message']);
+                $response['message'] = str_replace('Stack trace:', '', $response['message']);
+                $response['message'] = str_replace(' {main}.', '', $response['message']);
             }
         } elseif ($_POST['eventType'] == 'team') {
             try {
@@ -252,7 +308,56 @@ if ($_POST['request'] == 'evolution') {
                 $response['message'] = 'Registered successfully';
             } catch (Exception $exception) {
                 $response['status'] = FALSE;
-                $response['message'] = 'Sorry, there was an error: [' . $exception . '].';
+                $response['message'] = 'Sorry, there was an error: ' . $exception . '.';
+                $response['message'] = str_replace('Exception: ', '', $response['message']);
+                $response['message'] = str_replace(' in /home/enfinkjf/public_html/vaayufest.org/evolution/handler.php:', '', $response['message']);
+                $response['message'] = str_replace(' in /Users/gourangabani/Developer/admin/localhost/vaayu-fest/evolution/handler.php:', '', $response['message']);
+                $response['message'] = str_replace('Stack trace:', '', $response['message']);
+                $response['message'] = str_replace(' {main}.', '', $response['message']);
+            }
+        } elseif ($_POST['eventType'] == 'workshop') {
+            try {
+                $data['name'] = $utilities->sanitiseText($_POST['name']);
+                $data['college'] = $utilities->sanitiseText($_POST['college']);
+                $data['email'] = $utilities->sanitiseValidateEmail($_POST['email']);
+                $data['mobile'] = $utilities->sanitiseValidateMobile($_POST['mobile'], '91');
+                $data['events'] = '';
+                foreach ($_POST['events'] as $event) {
+                    $data['events'] = $event . ',' . $data['events'];
+                };
+                if ($data['email'] == FALSE) {
+                    throw new Exception('Please enter a valid email.');
+                } elseif ($data['mobile'] == FALSE) {
+                    throw new Exception('Please enter a valid mobile.');
+                } elseif (json_decode($evolution->countWorkshopEmail($data['email']))->countWorkshopEmail > 0) {
+                    throw new Exception('This email has already been registered.');
+                } elseif (json_decode($evolution->countWorkshopMobile($data['mobile']))->countWorkshopMobile > 0) {
+                    throw new Exception('This number has already been registered.');
+                } else {
+                    try {
+                        $evolution->registerWorkshop(
+                            $data['name'],
+                            $data['college'],
+                            $data['email'],
+                            $data['mobile'],
+                            $data['events']
+                        );
+                        $response['status'] = TRUE;
+                        $response['message'] = 'Registered successfully.';
+                    } catch (PDOException $exception) {
+                        throw 'Sorry, there was an error: [' . $exception . '].';
+                    }
+                }
+                $response['status'] = TRUE;
+                $response['message'] = 'Registered successfully.';
+            } catch (Exception $exception) {
+                $response['status'] = FALSE;
+                $response['message'] = 'Sorry, there was an error: ' . $exception . '.';
+                $response['message'] = str_replace('Exception: ', '', $response['message']);
+                $response['message'] = str_replace(' in /home/enfinkjf/public_html/vaayufest.org/evolution/handler.php:', '', $response['message']);
+                $response['message'] = str_replace(' in /Users/gourangabani/Developer/admin/localhost/vaayu-fest/evolution/handler.php:', '', $response['message']);
+                $response['message'] = str_replace('Stack trace:', '', $response['message']);
+                $response['message'] = str_replace(' {main}.', '', $response['message']);
             }
         }
     }

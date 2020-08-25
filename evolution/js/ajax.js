@@ -224,4 +224,52 @@ if ($('#register-individual-evolution-form').length != 0) {
                 responsePlaceholder.html(response.message);
             });
     })
+} else if ($('#register-workshop-evolution-form').length != 0) {
+    // identify the form and the response template
+    var submittedForm = $('#register-workshop-evolution-form');
+    // event listener for when submit is clicked upon
+    $(submittedForm).submit(function (event) {
+        // prevent the data from being sent as per the action attribute
+        event.preventDefault();
+        // collect data in a new object
+        var submittedData = new FormData(this);
+        $.ajax({
+                xhr: function () {
+                    xhr = new XMLHttpRequest;
+                    xhr.upload.onprogress = function (event) {
+                        if (event.lengthComputable) {
+                            var progressPercentage = event.loaded / event.total * 100;
+                            populateInProcessPlaceholders();
+                            responsePlaceholder.html(progressPercentage.toFixed(2) + '%');
+                        }
+                    };
+                    return xhr;
+                },
+                data: submittedData,
+                dataType: 'json',
+                type: 'POST',
+                url: './handler.php',
+                cache: false,
+                contentType: false,
+                processData: false,
+                beforeSend: function () {
+                    populateInProcessPlaceholders();
+                    responsePlaceholder.html('Loading...');
+                },
+            })
+            .done(function (response) {
+                resetPlaceholders();
+                if (response.status) {
+                    responsePlaceholder.addClass('alert-success');
+                    responsePlaceholder.html(response.message);
+                } else {
+                    responsePlaceholder.addClass('alert-danger');
+                    responsePlaceholder.html(response.message);
+                }
+            })
+            .fail(function (response) {
+                resetPlaceholders();
+                responsePlaceholder.html(response.message);
+            });
+    })
 }

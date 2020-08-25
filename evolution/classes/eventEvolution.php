@@ -28,4 +28,5 @@ abstract class eventType
 {
     const individual = 'individual';
     const team = 'team';
+    const workshop = 'workshop';
 }

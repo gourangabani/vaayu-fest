@@ -52,6 +52,8 @@ include_once './data/eventsEvolution.php';
                                 } else {
                                     // redirect
                                 }
+                            } elseif ($_GET['eventType'] == 'workshop') {
+                                include_once './forms/registerWorkshop.php';
                             } else {
                                 // redirect
                             }
