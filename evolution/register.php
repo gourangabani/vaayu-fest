@@ -52,7 +52,7 @@ include_once './data/eventsEvolution.php';
                                 } else {
                                     // redirect
                                 }
-                            } elseif ($_GET['eventType'] == 'workshop') {
+                            } elseif ($_GET['eventType'] == 'workshops') {
                                 include_once './forms/registerWorkshop.php';
                             } else {
                                 // redirect

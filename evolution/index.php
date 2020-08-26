@@ -57,17 +57,22 @@ include_once './data/eventsEvolution.php';
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <a class="btn btn-custom-primary p-4 w-100 mb-3" type="button" href="../media/evolution/evolution-events-brochure.pdf" target="_blank">
                                         Brochure!
                                     </a>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <a data-toggle="modal" class="btn btn-custom-primary p-4 w-100 mb-3" type="button" href="#register-modal">
-                                        Register
+                                        Events
                                     </a>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
+                                    <a class="btn btn-custom-primary p-4 w-100 mb-3" type="button" href="register.php?eventType=workshops">
+                                        Workshops
+                                    </a>
+                                </div>
+                                <div class="col-md-3">
                                     <a data-toggle="modal" class="btn btn-custom-primary p-4 w-100 mb-3" type="button" href="#contact-modal">
                                         Contact
                                     </a>
@@ -87,6 +92,38 @@ include_once './data/eventsEvolution.php';
                             <h2 class="mb-5">
                                 Events
                             </h2>
+                            <h3 class="mb-5">
+                                Workshops
+                            </h3>
+                            <div class="grid">
+                                <div class="row people">
+                                    <?php
+                                    foreach ($evolutionEvents as $evolutionEvent) {
+                                        if ($evolutionEvent->eventType == eventType::workshop) {
+                                            echo '
+                                            <div class="col-md-4 col-lg-3 item p-3">
+                                                <a data-toggle="modal" href="#evolution-event-' . $evolutionEvent->eventSlug . '-modal">
+                                                    <div class="box rounded shadow-lg" style="background-image:url(\'../media/evolution/' . $evolutionEvent->eventPoster . '\')">
+                                                        <div class="cover">
+                                                            <h5 class="name">
+                                                                ' . $evolutionEvent->eventBrochureTitle . '
+                                                                <br>
+                                                                [' . $evolutionEvent->eventName . ']
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            ';
+                                        }
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-left p-3">
                             <h3 class="mb-5">
                                 Individual
                             </h3>
@@ -183,8 +220,6 @@ include_once './data/eventsEvolution.php';
                                         <a class="btn btn-custom-primary p-3 mb-3" type="button" href="register.php?eventType=team&event=escape-in">
                                             Excape In [Escape Room]
                                         </a>
-                                    </div>
-                                    <div class="row">
                                     </div>
                                 </div>
                             </div>

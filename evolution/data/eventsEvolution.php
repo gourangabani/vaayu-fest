@@ -145,11 +145,11 @@ $disenoEvento = new EventEvolution(
 
 $talkShow = new EventEvolution(
     14,
-    'talk-show',
+    'bon-appetit',
     'With Maria Goretti',
-    'Talk Show',
+    'Bon Appetit',
     '26th August, 16:00 IST',
-    'talk-show.jpg',
+    'bon-appetit.jpg',
     eventType::workshop,
     true
 );
@@ -168,7 +168,7 @@ $mobilePhotographyWorkshop = new EventEvolution(
 $danceWorkshop = new EventEvolution(
     16,
     'dance-workshop',
-    'With Shiamak',
+    'With Ananya',
     'Dance Workshop',
     '31st August',
     'dance-workshop.jpg',
