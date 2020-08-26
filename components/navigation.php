@@ -8,7 +8,6 @@ require 'developmentMachineLogic.php';
         <span class="d-block d-lg-none">Vaayu Fest</span>
         <span class="d-none d-lg-block"><img class="img-fluid mx-auto mb-2" src="<?php echo $base; ?>assets/img/vaayu-20-logo-transparent.png" alt="Logo" /></span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <?php
     if (basename($_SERVER['REQUEST_URI']) == 'index.php' || basename($_SERVER['REQUEST_URI']) == '' || basename($_SERVER['REQUEST_URI']) == NULL) {
         echo '
@@ -68,4 +67,5 @@ require 'developmentMachineLogic.php';
         <a class="social-icon" href="https://linkedin.com/company/vaayu-fest"><i class="fab fa-linkedin-in"></i></a>
         <a class="social-icon" href="https://snapchat.com/add/vaayufest"><i class="fab fa-snapchat"></i></a>
     </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 </nav>
