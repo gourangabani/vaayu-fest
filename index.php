@@ -80,8 +80,8 @@ include_once './data/sponsors.php';
                     <div class="grid">
                         <div class="row people">
                             <div class="col-md-4 col-lg-3 item">
-                                <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2018">
-                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202018/11.jpg')">
+                                <a href="gallery.php?path=2018">
+                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/media/images/gallery/2018/11.jpg')">
                                         <div class="cover">
                                             <h3 class="name">
                                                 2018
@@ -91,8 +91,8 @@ include_once './data/sponsors.php';
                                 </a>
                             </div>
                             <div class="col-md-4 col-lg-3 item">
-                                <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2017">
-                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202017/1.jpg')">
+                                <a href="gallery.php?path=2017">
+                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/media/images/gallery/2017/1.jpg')">
                                         <div class="cover">
                                             <h3 class="name">
                                                 2017
@@ -102,8 +102,8 @@ include_once './data/sponsors.php';
                                 </a>
                             </div>
                             <div class="col-md-4 col-lg-3 item">
-                                <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2016">
-                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202016/(1).jpg')">
+                                <a href="gallery.php?path=2016">
+                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/media/images/gallery/2016/(1).jpg')">
                                         <div class="cover">
                                             <h3 class="name">
                                                 2016
@@ -113,8 +113,8 @@ include_once './data/sponsors.php';
                                 </a>
                             </div>
                             <div class="col-md-4 col-lg-3 item">
-                                <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=path2015">
-                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202015/(10).jpg')">
+                                <a href="gallery.php?path=2015">
+                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/media/images/gallery/2015/(10).jpg')">
                                         <div class="cover">
                                             <h3 class="name">
                                                 2015
@@ -124,8 +124,8 @@ include_once './data/sponsors.php';
                                 </a>
                             </div>
                             <div class="col-md-4 col-lg-3 item">
-                                <a href="https://vaayufest.org/2019/Gallery/gallery.php?action=pathcelebrities">
-                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/2019/images/Vaayu%202015/(12).jpg')">
+                                <a href="gallery.php?path=celebrities">
+                                    <div class="box rounded" style="background-image:url('https://www.vaayufest.org/media/images/gallery/2015/(12).jpg')">
                                         <div class="cover">
                                             <h3 class="name">
                                                 Celebrities
