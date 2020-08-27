@@ -15,12 +15,12 @@
 .clearfix:after { clear: both; }
 
 body {
-	background: #D3EEE2;
-	color: #2E3444;
-	font-size: 100%;
-	line-height: 1.25;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	/* background: #D3EEE2; */
+	/* color: #2E3444; */
+	/* font-size: 100%; */
+	/* line-height: 1.25; */
+	/* font-family: 'Lato', sans-serif; */
+	/* font-weight: 300; */
 }
 
 a {
@@ -36,7 +36,7 @@ a:hover, a:focus {
 .codrops-header {
 	margin: 0 auto;
 	padding: 2em;
-	text-align: center;
+	/* text-align: center; */
 }
 
 .codrops-header h1 {
@@ -115,10 +115,10 @@ a:hover, a:focus {
 	content: "\e004";
 }
 
-section {
+/* section {
 	padding: 1em;
 	text-align: center;
-}
+} */
 
 .related {
 	padding: 15em 0 3em;

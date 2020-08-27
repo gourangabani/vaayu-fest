@@ -6,7 +6,7 @@
 }
 
 .gallery-grid {
-	margin: 30px auto;
+	/* margin: 30px auto; */
 	padding: 0;
 	list-style: none;
 	min-height: 500px;
@@ -136,7 +136,7 @@
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 800;
-	font-size: 1em;
+	/* font-size: 1em; */
 	-webkit-transition: -webkit-transform 0.2s, color 0.2s;
 	transition: transform 0.2s, color 0.2s;
 }
@@ -274,4 +274,5 @@
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+	border-radius: 10px;
 }
