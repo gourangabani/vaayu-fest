@@ -20,7 +20,7 @@
     </div>
     <div class="form-group">
         <h3 class="mb-3">
-            Events you'd like to participate in:
+            Workshops you'd like to attend:
         </h3>
         <?php
         foreach ($evolutionEvents as $evolutionEvent) {
