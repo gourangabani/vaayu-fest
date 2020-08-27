@@ -162,7 +162,7 @@ $mobilePhotographyWorkshop = new EventEvolution(
     '27th August, 17:00 IST',
     'mobile-photography-workshop.jpg',
     eventType::workshop,
-    true
+    false
 );
 
 $danceWorkshop = new EventEvolution(
