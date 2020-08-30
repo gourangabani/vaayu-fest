@@ -151,7 +151,7 @@ $talkShow = new EventEvolution(
     '26th August, 16:00 IST',
     'bon-appetit.jpg',
     eventType::workshop,
-    true
+    false
 );
 
 $mobilePhotographyWorkshop = new EventEvolution(
