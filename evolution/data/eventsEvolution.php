@@ -173,7 +173,7 @@ $danceWorkshop = new EventEvolution(
     '31st August',
     'dance-workshop.jpg',
     eventType::workshop,
-    true
+    false
 );
 
 $evolutionEvents = [$marketingManiac, $pixels, $vlogInn, $beYou, $escapeIn, $stepInStyle, $bollywoodzilla, $hustleAndMuscle, $versusVersusVersus, $writeCameraAction, $stonks, $crisimulation, $disenoEvento, $talkShow, $mobilePhotographyWorkshop, $danceWorkshop];
