@@ -83,6 +83,28 @@ include_once './data/eventsEvolution.php';
                 </div>
             </div>
         </section>
+        <!-- evolution sponsors -->
+        <section class="separate-section container" id="evolution-sponsors">
+            <div class="separate-section-content">
+                <div class="p-5 bg-white rounded shadow mb-5">
+                    <div class="row">
+                        <div class="col-md-12 text-left p-3">
+                            <h3 class="mb-5">
+                                Sponsors
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 p-3">
+                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="../media/evolution/sponsor-the-amazing-escape.jpg" />
+                            <h3 class="name text-center">
+                                The Amazing Escape
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- evolution events -->
         <section class="separate-section container" id="evolution-events">
             <div class="separate-section-content">
