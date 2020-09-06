@@ -21,6 +21,12 @@
 }
 
 #evolution-events {
+    background: linear-gradient(to bottom, #243665bf, #243665bf), url('https://i.gifer.com/J4o.gif');
+    background-repeat: repeat-y !important;
+    background-size: contain !important;
+}
+
+#evolution-sponsors {
     background: linear-gradient(to bottom, #07cff6, #243665bf), url('https://i.gifer.com/J4o.gif');
     background-repeat: repeat-y !important;
     background-size: contain !important;
