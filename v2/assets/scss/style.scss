@@ -1,20 +1,10 @@
-// Import variables
-@import "./variables.scss";
-
-// Import Bootstrap
-@import "bootstrap/scss/bootstrap.scss";
-
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
 // Global CSS
-@import "./global.scss";
-
+@import "global.scss";
 // Components
-@import "./components/navbar.scss";
-@import "./components/buttons.scss";
-
-// Sections
-@import "./sections/masthead.scss";
-@import "./sections/about.scss";
-@import "./sections/projects.scss";
-@import "./sections/signup.scss";
-@import "./sections/contact.scss";
-@import "./sections/footer.scss";
+@import "navbar.scss";
+@import "masthead.scss";
+@import "bootstrap-overrides.scss";
+@import "custom.scss";

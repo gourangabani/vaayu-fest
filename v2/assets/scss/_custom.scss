@@ -1,0 +1,74 @@
+.block {
+    display: block;
+    height: inherit;
+    width: 20vw;
+    position: absolute;
+}
+
+#home-updates-carousel {
+    .item img {
+        height: 200px;
+        object-fit: cover;
+        border-radius: 25px;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    }
+}
+
+#home-latest-categories-carousel {
+    .custom-card img {
+        height: 50vh;
+        width: auto;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+}
+
+#home-how-to-join {
+    img {
+        border-radius: 25px;
+        width: 100%;
+        height: auto;
+    }
+
+    @include lg {
+        margin-left: -5rem;
+    }
+}
+
+.custom-card {
+    border-radius: 25px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    margin: 25px 0px;
+
+    .card-img-overlay {
+        border-radius: 25px;
+        background: linear-gradient(to top, black, transparent);
+    }
+
+    .card-title {
+        position: absolute;
+        bottom: 50px;
+        // visibility: hidden;
+        color: white !important;
+    }
+
+    .card-text {
+        position: absolute;
+        bottom: 0;
+        visibility: hidden;
+    }
+
+    .btn {
+        border-radius: 50px;
+        background: linear-gradient(to bottom right, yellow, pink);
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+* {
+    // border: 0.25px solid red;
+}
