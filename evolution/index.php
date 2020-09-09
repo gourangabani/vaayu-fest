@@ -95,12 +95,36 @@ include_once './data/eventsEvolution.php';
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 p-3">
-                            <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="../media/evolution/sponsor-the-amazing-escape.jpg" />
-                            <h3 class="name text-center">
-                                The Amazing Escape
-                            </h3>
-                        </div>
+                        <?php
+                        $sponsors = [
+                            ['Art Master Class', 'art-master-class.jpg'],
+                            ['Bombay Theatre Company', 'bombay-theatre-company.jpg'],
+                            ['Box', 'box.jpg'],
+                            ['Campus Kulture', 'campus-kulture.jpg'],
+                            ['Change Matrix', 'change-matrix.jpg'],
+                            ['ISS', 'iss.jpg'],
+                            ['My Captain', 'my-captain.jpg'],
+                            ['Papa Brands', 'papa-brands.jpg'],
+                            ['Pencil', 'pencil.jpg'],
+                            ['Rhythmonline', 'rhythmonline.jpg'],
+                            ['Seven Magpie Productions', 'seven-magpie-productions.jpg'],
+                            ['Shiamak', 'shiamak.jpg'],
+                            ['Shrex Design', 'shrex-design.jpg'],
+                            ['The Amaing Escape', 'the-amazing-escape.jpg'],
+                            ['Ti', 'ti.jpg'],
+                            ['Vaishnav Chogale', 'vaishnav-chogale.jpg']
+                        ];
+                        foreach ($sponsors as $sponsor) {
+                            echo '
+                            <div class="col-md-3 p-3">
+                                <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="../media/images/sponsors/evolution/' . $sponsor[1] . '" />
+                                <h3 class="name text-center">
+                                    ' . $sponsor[0] . '
+                                </h3>
+                            </div>
+                            ';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
