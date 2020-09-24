@@ -50,10 +50,10 @@ include_once './data/sponsors.php';
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <a href="https://play.google.com/store/apps/details?id=com.enfinilabs.vaayufest&hl=en">
-                                <img class="p-3" src="<?php echo $base ?>assets/img/app-store-badge.png" style="width: 100%;" />
+                                <img class="p-3" src="<?php echo $base ?>assets/img/play-store-badge.png" style="width: 100%;" />
                             </a>
                             <a href="https://apps.apple.com/in/app/vaayufest/id1481102009">
-                                <img class="p-3" src="<?php echo $base ?>assets/img/play-store-badge.png" style="width: 100%;" />
+                                <img class="p-3" src="<?php echo $base ?>assets/img/app-store-badge.png" style="width: 100%;" />
                             </a>
                         </div>
                         <div class="col-md-4"></div>
