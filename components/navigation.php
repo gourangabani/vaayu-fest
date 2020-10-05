@@ -1,71 +1,65 @@
-<?php
-require 'developmentMachineLogic.php';
-?>
-
-<!-- navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-custom-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Vaayu Fest</span>
-        <span class="d-none d-lg-block"><img class="img-fluid mx-auto mb-2" src="<?php echo $base; ?>assets/img/vaayu-20-logo-transparent.png" alt="Logo" /></span>
-    </a>
-    <?php
-    if (basename($_SERVER['REQUEST_URI']) == 'index.php' || basename($_SERVER['REQUEST_URI']) == '' || basename($_SERVER['REQUEST_URI']) == NULL) {
-        echo '
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about-us">
-                        About Us
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#gallery">
-                        Gallery
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#events">
-                        Events
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#team">
-                        Team
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#sponsors">
-                        Sponsors
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact-us">
-                        Contact Us
-                    </a>
-                </li>
-            </ul>
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img src="assets/graphics/vaayu-20-logo-transparent-compressed.png" alt="Vaayu Fest - Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <?php
+            if (basename($_SERVER['REQUEST_URI']) == 'index.php' || basename($_SERVER['REQUEST_URI']) == '' || basename($_SERVER['REQUEST_URI']) == NULL || basename($_SERVER['REQUEST_URI']) == '/') {
+                echo '
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#aboutSection">
+                            The Fest
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#gallerySection">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#temporaryTeamSection">
+                            Team
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sponsors.php">
+                            Sponsors
+                        </a>
+                    </li>
+                </ul>
+                ';
+            } else {
+                echo '
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php#aboutSection">
+                            The Fest
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php#gallerySection">
+                            Gallery
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php#temporaryTeamSection">
+                            Team
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sponsors.php">
+                            Sponsors
+                        </a>
+                    </li>
+                </ul>
+                ';
+            }
+            ?>
         </div>
-        ';
-    } else {
-        echo '
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="' . $base . 'index.php">
-                        Home
-                    </a>
-                </li>
-            </ul>
-        </div>
-        ';
-    }
-    ?>
-    <div class="social-icons">
-        <a class="social-icon" href="https://instagram.com/vaayufest"><i class="fab fa-instagram"></i></a>
-        <a class="social-icon" href="https://facebook.com/VaayuFest"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-icon" href="https://twitter.com/VaayuFest"><i class="fab fa-twitter"></i></a>
-        <a class="social-icon" href="https://linkedin.com/company/vaayu-fest"><i class="fab fa-linkedin-in"></i></a>
-        <a class="social-icon" href="https://snapchat.com/add/vaayufest"><i class="fab fa-snapchat"></i></a>
     </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 </nav>

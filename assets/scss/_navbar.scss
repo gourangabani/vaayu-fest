@@ -1,0 +1,121 @@
+#mainNav {
+  background-color: $primary;
+  min-height: 3.5rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+  .navbar-toggler {
+    padding: 0.75rem;
+    color: $secondary !important;
+    font-size: 80%;
+    border: 1px solid $secondary;
+    background-color: $secondary;
+
+    span {
+      color: $secondary !important;
+    }
+  }
+
+  .navbar-toggler:focus {
+    outline: none;
+  }
+
+  .navbar-brand {
+    padding: 0.9rem 0;
+    color: $secondary;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    img {
+      height: 2.25rem;
+    }
+
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        color: $secondary;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+      }
+    }
+
+    .nav-item:hover {
+      background-color: transparent;
+      color: $highlight;
+      outline: none;
+    }
+
+    .nav-item:active,
+    .nav-item:focus {
+      background-color: transparent;
+      outline: none;
+    }
+  }
+}
+
+@include lg {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    border-bottom: none;
+    box-shadow: none !important;
+    transition: background-color 0.3s ease-in-out;
+
+    .navbar-brand {
+      color: $primary;
+
+      img {
+        height: 4rem;
+        transition: height 0.3s ease-in-out;
+      }
+    }
+
+    .nav-link {
+      padding: 2rem 1.5rem;
+      color: $primary !important;
+      transition: none;
+    }
+
+    .nav-link:hover {
+      color: $highlight;
+    }
+
+    .nav-link:active {
+      color: $highlight;
+    }
+  }
+
+  #mainNav.navbar-shrink {
+    background-color: $primary;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+    .navbar-brand {
+      color: $secondary;
+    }
+
+    .nav-link {
+      color: $secondary !important;
+      border-bottom: 0.25rem solid transparent;
+    }
+
+    .nav-link:hover {
+      color: $highlight;
+    }
+
+    .nav-link:active {
+      color: $secondary;
+    }
+
+    .nav-link.active {
+      color: $secondary;
+      border-bottom: 0.25rem solid $secondary;
+      outline: none;
+    }
+  }
+}

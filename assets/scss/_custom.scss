@@ -1,0 +1,484 @@
+#homeMastheadOverlay {
+    // visibility: hidden;
+    background: linear-gradient(to bottom, transparent, $secondary);
+    // background-color: transparent;
+}
+
+#aboutSection {
+    background: $accent;
+    color: $specificGrey;
+
+    #aboutSectionOverlay {
+        background: linear-gradient(to right bottom, $secondary50, $secondary, $secondary, $secondary50, $accent50);
+    }
+}
+
+#happeningsSection {
+    background: $secondary;
+    color: $primary;
+    display: block;
+
+    .my-slider {
+        position: relative;
+        display: block;
+    }
+}
+
+#gallerySection {
+    background: $specificGrey;
+    color: $primary;
+}
+
+#eventsSection {
+    background: linear-gradient(to bottom right, $secondary, $secondary);
+    color: $primary;
+
+    #eventsCarousel {
+
+        .customCard {
+            background: linear-gradient(to top, rgb(0, 87, 151), rgb(0, 87, 151), rgb(0, 87, 151));
+
+            .customCardBackground {
+                // visibility: hidden;
+                // height: 300px;
+                width: auto;
+                object-fit: cover;
+                border-radius: 25px !important;
+                background-color: transparent;
+                // -webkit-filter: blur(5px);
+                /* Safari 6.0 - 9.0 */
+                // filter: blur(5px);
+            }
+
+            .customCardImage {
+                visibility: hidden;
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 100px;
+                padding: 10px;
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.500) !important;
+            }
+
+            .customCardSubtitle {
+                position: absolute;
+                bottom: 25px;
+                color: $primary;
+            }
+
+            .card-img-overlay {
+                // background: linear-gradient(to top, black, transparent, transparent);
+
+                position: absolute;
+            }
+
+            .card-title {
+                color: $primary !important;
+            }
+
+            .card-image {
+                height: 50%;
+                width: auto;
+            }
+
+            a {
+                color: $primary !important;
+                font-size: 0.5rem;
+            }
+        }
+
+    }
+
+    .customHolder {
+
+        .customLabel {
+            padding: 1rem !important;
+            color: $primary;
+            background-color: $specificGrey;
+            // border: solid 1px $primary;
+            border-radius: 25px 0px 0px 25px;
+
+            @include md {
+                padding: 0.25rem !important;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+
+                align-items: center;
+
+                h4,
+                h6 {
+                    // writing-mode: vertical-lr;
+                    transform: rotate(-90deg);
+                    /* Legacy vendor prefixes that you probably don't need... */
+                    /* Safari */
+                    -webkit-transform: rotate(-90deg);
+                    /* Firefox */
+                    -moz-transform: rotate(-90deg);
+                    /* IE */
+                    -ms-transform: rotate(-90deg);
+                    /* Opera */
+                    -o-transform: rotate(-90deg);
+                    /* Internet Explorer */
+                    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+                }
+            }
+        }
+
+        .customButtonHolder {
+            background-color: rgb(0, 87, 151);
+            border-radius: 0px 25px 25px 0px;
+
+            .customButton {
+                background-color: rgb(0, 87, 151);
+            }
+        }
+    }
+
+}
+
+#teamSection {
+    background: linear-gradient(to bottom right, $specificGrey, $specificGrey);
+    color: $primary;
+
+    #teamCarousel {
+
+        .customCard {
+            background: linear-gradient(to top, rgb(0, 87, 151), rgb(0, 87, 151), rgb(0, 87, 151));
+
+            .customCardBackground {
+                // visibility: hidden;
+                height: 50vh;
+                width: auto;
+                object-fit: cover;
+                border-radius: 25px;
+                background-color: transparent;
+                // -webkit-filter: blur(5px);
+                /* Safari 6.0 - 9.0 */
+                // filter: blur(5px);
+            }
+
+            .customCardImage {
+                visibility: hidden;
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 100px;
+                padding: 10px;
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.500) !important;
+            }
+
+            .customCardSubtitle {
+                position: absolute;
+                bottom: 25px;
+                color: $primary;
+            }
+
+            .card-img-overlay {
+                // background: linear-gradient(to top, black, transparent, transparent);
+            }
+
+            .card-title {
+                color: $primary !important;
+            }
+
+            .card-image {
+                height: 50%;
+                width: auto;
+            }
+
+            a {
+                color: $primary !important;
+                font-size: 0.5rem;
+            }
+        }
+
+    }
+
+    .customHolder {
+
+        .customLabel {
+            padding: 1rem !important;
+            color: $primary;
+            background-color: $specificGrey;
+            // border: solid 1px $primary;
+            border-radius: 25px 0px 0px 25px;
+
+            @include md {
+                padding: 0.25rem !important;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                -webkit-box-align: center;
+
+                align-items: center;
+
+                h4,
+                h6 {
+                    // writing-mode: vertical-lr;
+                    transform: rotate(-90deg);
+                    /* Legacy vendor prefixes that you probably don't need... */
+                    /* Safari */
+                    -webkit-transform: rotate(-90deg);
+                    /* Firefox */
+                    -moz-transform: rotate(-90deg);
+                    /* IE */
+                    -ms-transform: rotate(-90deg);
+                    /* Opera */
+                    -o-transform: rotate(-90deg);
+                    /* Internet Explorer */
+                    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+                }
+            }
+        }
+
+        .customButtonHolder {
+            background-color: rgb(0, 87, 151);
+            border-radius: 0px 25px 25px 0px;
+
+            .customButton {
+                background-color: rgb(0, 87, 151);
+            }
+        }
+    }
+
+}
+
+#temporaryTeamSection {
+    background: linear-gradient(to bottom right, $secondary, $secondary);
+    color: $primary;
+
+    .customTabs {
+        .nav-link.active {
+            color: $secondary !important;
+        }
+    }
+}
+
+#sponsorsCarouselSection {
+    padding-top: calc(2rem + 70px);
+    padding-bottom: 7rem;
+    background: linear-gradient(-45deg, $secondary, $secondary, $highlight, $accent);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 75vh;
+
+    @media (min-width: 992px) {
+        height: 90vh;
+        padding-top: calc(5rem + 55px);
+        padding-bottom: 5rem;
+    }
+
+    #sponsorsCarousel {
+        .item img {
+            height: 300px;
+            object-fit: cover;
+            border-radius: 25px;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+            @media (min-width: 992px) {
+                height: 450px;
+            }
+        }
+    }
+}
+
+#sponsorsSection {
+    background: linear-gradient(to bottom right, $secondary, $secondary);
+    color: $primary;
+
+    .customTabs {
+        .nav-link.active {
+            color: $secondary !important;
+        }
+    }
+}
+
+.customSection {
+    min-height: 100vh !important;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.customSection.customStandaloneSection {
+    @include md {
+        padding-top: 150px;
+    }
+}
+
+.customSectionTitle {
+    margin: 30px 30px 30px 0px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.0;
+
+    @include md {
+        // writing-mode: vertical-lr;
+        transform: rotate(-90deg);
+        /* Legacy vendor prefixes that you probably don't need... */
+        /* Safari */
+        -webkit-transform: rotate(-90deg);
+        /* Firefox */
+        -moz-transform: rotate(-90deg);
+        /* IE */
+        -ms-transform: rotate(-90deg);
+        /* Opera */
+        -o-transform: rotate(-90deg);
+        /* Internet Explorer */
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        margin-top: 50vh;
+        align-items: top;
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+
+.customSectionTitle.customStandaloneSectionTitle {
+    margin: 120px 30px 30px 0px;
+
+    @include md {
+        margin-top: 50vh;
+    }
+}
+
+.customHeader {
+    position: relative;
+    background-color: $secondary;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+
+    video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        right: 0;
+        bottom: 0;
+        // margin-left: auto;
+        // margin-right: auto;
+        margin: auto;
+
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        -webkit-box-align: center;
+
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+.customCard {
+    border-radius: 25px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+
+    .card-img-overlay {
+        border-radius: 25px;
+    }
+
+    .card-title {
+        position: absolute;
+        bottom: 50px;
+    }
+
+    .card-text {
+        position: absolute;
+        bottom: 0;
+        visibility: hidden;
+    }
+
+    .card-image {
+        object-fit: cover;
+        border-radius: 100px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.customTeamIdentificationCard {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+
+.customButton {
+    border-radius: 50px;
+}
+
+.customTabs {
+    background-color: transparent;
+    border: transparent;
+
+    .nav-link {
+        color: $primary;
+    }
+
+    .nav-link.active {
+        background-color: $primary;
+        border-radius: 10px;
+    }
+}
+
+.btn {
+    color: $primary !important;
+}

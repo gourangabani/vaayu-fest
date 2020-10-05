@@ -1,0 +1,16 @@
+// Core variables and mixins
+@import "variables.scss";
+@import "mixins.scss";
+// Global CSS
+@import "global.scss";
+// Components
+@import "navbar.scss";
+@import "masthead.scss";
+@import "bootstrap-overrides.scss";
+
+@import "imported-animations/cool-layout-with-complex-chainable-animation";
+@import "imported-animations/animated-card-slider-plugin";
+@import "imported-animations/fancy-slider";
+
+// custom
+@import "custom.scss";

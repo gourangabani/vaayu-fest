@@ -1,37 +1,34 @@
-<!-- bootstrap core js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<!-- third party plugin js -->
+<!-- jquery -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-<!-- font awesome icons (free version) -->
-<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-<!-- gsap -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
-<!-- gsap scroll -->
-<script src="<?php echo $base; ?>js/ScrollTrigger.js"></script>
-<!-- gsap text -->
-<script src="<?php echo $base; ?>js/TextPlugin.js"></script>
-<!-- vendor js -->
-<script src="<?php echo $base; ?>js/vendor.js"></script>
-<!-- custom js -->
-<script src="<?php echo $base; ?>js/custom.js"></script>
-<!-- not to be cached -->
+<!-- bootstrap core javascript -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- owl carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- imported animations -->
+<!-- 1 -->
+<script src="assets/js/imported-animations/cool-layout-with-complex-chainable-animation.js"></script>
+<!-- 2 -->
+<script src="assets/js/imported-animations/animated-card-slider-plugin/jquery.event.move.js"></script>
+<script src="assets/js/imported-animations/animated-card-slider-plugin/jquery.event.swipe.js"></script>
+<script src="assets/js/imported-animations/animated-card-slider-plugin/jquery.cardslider.min.js"></script>
 <script>
-    function Modal() {
-        var custom_modal = $('#evolution-modal');
-        setTimeout(function() {
-            custom_modal.modal();
-        }, 10000);
-    }
-
-    function setModal() {
-        if (!sessionStorage.getItem('doNotShowEvolutionModal')) {
-            sessionStorage.setItem('doNotShowEvolutionModal', true);
-            Modal();
-        } else {
-            $('.evolution-modal').hide();
-        }
-    };
-
-    setModal();
+    $('.my-slider').cardslider({
+        swipe: true,
+        dots: true
+    });
 </script>
+<!-- 3 -->
+<script src="assets/js/imported-animations/fancy-slider.js"></script>
+<!-- custom -->
+<script src="assets/js/owl-carousel-custom.js"></script>
+<script src="assets/js/scripts.js"></script>
+<!-- gsap -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<!-- scroll magic -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<!-- animate -->
+<script src="assets/js/animate.js"></script>
+<!-- font awesome icons (free version) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous"></script>
