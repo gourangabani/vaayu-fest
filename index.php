@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-include_once './classes/department.php';
+include_once './classes/models/department.php';
 include_once './data/departments.php';
 ?>
 

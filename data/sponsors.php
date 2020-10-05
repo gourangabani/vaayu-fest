@@ -150,6 +150,11 @@ $gobbleGrams = new Sponsor(
     categories::massMedia,
     'gobble-grams.jpg'
 );
+$changeMatrix = new Sponsor(
+    'Change Matrix',
+    categories::prefests,
+    'change-matrix.jpg'
+);
 
 $sponsors = [
     $dilipBuildconLtd, $idemitsu, $inditrade, $kreativeKeeda, $sbi, $tribeVibe, $navBharat, $vijaySales,
@@ -160,4 +165,5 @@ $sponsors = [
 $sponsorsILU = [$dilipBuildconLtd, $idemitsu, $inditrade, $kreativeKeeda, $sbi, $tribeVibe, $navBharat, $vijaySales];
 $sponsorsGeneral = [$bodyCanvas, $charaghDin, $dellTechnologies, $denver, $emeveta, $iCreate, $kongsNutrition, $moneyControl, $poshn, $schbang, $smaaash, $starbucks, $uniball, $zomato];
 $sponsorsMassMedia = [$telexAdvertisment, $ufo, $lokmat, $fistoSports, $youthIncorporated, $theHindu, $navBharat, $gobbleGrams];
+$sponsorsPrefest = [];
 $categories = [$sponsorsILU, $sponsorsGeneral, $sponsorsMassMedia];

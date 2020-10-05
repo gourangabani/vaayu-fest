@@ -2,7 +2,7 @@
 <html lang="en">
 
 <?php
-include_once './classes/sponsor.php';
+include_once './classes/models/sponsor.php';
 include_once './data/sponsors.php';
 ?>
 

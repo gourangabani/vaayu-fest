@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php
-include_once './classes/department.php';
-include_once './data/departments.php';
-?>
-
 <head>
     <?php include_once('./components/meta.php') ?>
     <meta name="description" content="VAAYU: a metaphor of people, a carrier of hope, a treasure of memories, a haven for magical moments, a dream lived by many. It's a rising: invincible, powerful, mystical." />

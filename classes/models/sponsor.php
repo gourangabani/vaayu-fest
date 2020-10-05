@@ -19,4 +19,5 @@ abstract class categories
     const ilu = 'ILU';
     const general = 'General';
     const massMedia = 'Mass Media';
+    const prefests = 'Prefests';
 }
