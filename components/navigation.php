@@ -1,6 +1,6 @@
 <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="/index.php">
             <img src="assets/graphics/vaayu-20-logo-transparent-compressed.png" alt="Vaayu Fest - Logo" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,11 @@
                             Sponsors
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="impetus.php">
+                            Impetus
+                        </a>
+                    </li>
                 </ul>
                 ';
             } else {
@@ -54,6 +59,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="sponsors.php">
                             Sponsors
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="impetus.php">
+                            Impetus
                         </a>
                     </li>
                 </ul>
