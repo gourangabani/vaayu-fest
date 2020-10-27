@@ -61,6 +61,11 @@ include_once './data/sponsors.php';
                                     Mass Media
                                 </a>
                             </li>
+                            <li class="nav-item flex-sm-fill">
+                                <a id="prefests-tab" data-toggle="tab" href="#prefests" class="nav-link border-0 text-uppercase font-weight-bold">
+                                    Prefests
+                                </a>
+                            </li>
                         </ul>
                         <div id="sponsors-tab-content" class="tab-content">
                             <div id="ilu" class="tab-pane fade px-4 py-5 show active">
@@ -68,7 +73,7 @@ include_once './data/sponsors.php';
                                     <?php
                                     foreach ($sponsorsILU as $sponsor) {
                                         echo '
-                                        <div class="col-lg-3 col-md-4 p-3">
+                                        <div class="col-lg-4 col-md-4 p-3">
                                             <img class="img-fluid img-profile rounded-circle mx-auto mb-2 shadow p-3" src="media/images/sponsors/' . $sponsor->sponsorLogo . '" alt="Sponsor - ' . $sponsor->sponsorName . '" />
                                             <h4 class="name text-center text-uppercase">
                                                 ' . $sponsor->sponsorName . '
