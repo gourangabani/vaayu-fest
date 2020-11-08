@@ -32,8 +32,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="impetus.php">
-                            Impetus
+                        <a class="nav-link" href="happenings.php">
+                            Happenings
                         </a>
                     </li>
                 </ul>
@@ -62,8 +62,8 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="impetus.php">
-                            Impetus
+                        <a class="nav-link" href="happenings.php">
+                            Happenings
                         </a>
                     </li>
                 </ul>
