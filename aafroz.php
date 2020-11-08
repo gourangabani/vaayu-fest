@@ -7,30 +7,25 @@
     <meta property="og:title" content="Vaayu '20 - Get Empowered!" />
     <meta property="og:description" content="VAAYU: a metaphor of people, a carrier of hope, a treasure of memories, a haven for magical moments, a dream lived by many. It's a rising: invincible, powerful, mystical." />
     <title>
-        Vaayu Fest - Impetus
+        Vaayu Fest - Aafroz
     </title>
     <?php include_once('./components/stylesheets.php') ?>
-    <meta http-equiv="refresh" content="3; url=https://vaayufest.org/media/impetus/september-20-1.pdf" />
+
 </head>
 
 <body id="page-top">
     <?php include_once './components/navigation.php'; ?>
-    <!-- catch the cash - registrations -->
-    <section id="sponsorsSection" class="customSection pt-5 pb-5">
+    <!-- khayaal - registrations -->
+    <section id="sponsorsSection" class="customSection">
         <div class="container">
-            <div class="row pt-5 pb-5">
+            <div class="row">
                 <div class="col-lg-1 col-md-1 col-sm-12">
                     <h2 class="customSectionTitle">
-                        IMPETUS
+                        AAFROZ
                     </h2>
                 </div>
                 <div class="col-lg-11 col-md-11 col-sm-12">
-                    <h1 class="text-center">
-                        Loading September's Issue.
-                    </h1>
-                    <p class="text-center">
-                        Please check your downloads in case it hasn't opened yet. Click <a href="https://vaayufest.org/media/impetus/september-20-1.pdf">here</a> to open the file directly.
-                    </p>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd25gWMHWlWhhgwDVLs2q9Jxb7iEhqiVdl1dKojsz1lI-WXqA/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
             <div class="row">
