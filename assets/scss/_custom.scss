@@ -482,3 +482,23 @@
 .btn {
     color: $primary !important;
 }
+
+#vaayu20Section {
+    background: linear-gradient(to bottom right, $primary, $secondary) !important;
+    color: $primary !important;
+
+    .customButton {
+        color: $secondary !important;
+        background-color: $accent !important;
+    }
+}
+
+#userRegistrationSection {
+    background: linear-gradient(to bottom right, $accent, $secondary) !important;
+    color: $primary !important;
+
+    .customButton {
+        color: $secondary !important;
+        background-color: $accent !important;
+    }
+}

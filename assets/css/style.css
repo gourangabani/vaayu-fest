@@ -1616,4 +1616,18 @@ body {
 .btn {
   color: #ffffff !important; }
 
+#vaayu20Section {
+  background: linear-gradient(to bottom right, #ffffff, #162447) !important;
+  color: #ffffff !important; }
+  #vaayu20Section .customButton {
+    color: #162447 !important;
+    background-color: #e43f5a !important; }
+
+#userRegistrationSection {
+  background: linear-gradient(to bottom right, #e43f5a, #162447) !important;
+  color: #ffffff !important; }
+  #userRegistrationSection .customButton {
+    color: #162447 !important;
+    background-color: #e43f5a !important; }
+
 /*# sourceMappingURL=style.css.map */
