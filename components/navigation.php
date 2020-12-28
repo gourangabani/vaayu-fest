@@ -36,6 +36,11 @@
                             Happenings
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vaayu-20.php">
+                            VAAYU\'20
+                        </a>
+                    </li>
                 </ul>
                 ';
             } else {
@@ -64,6 +69,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="happenings.php">
                             Happenings
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="vaayu-20.php">
+                            VAAYU\'20
                         </a>
                     </li>
                 </ul>
