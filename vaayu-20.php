@@ -48,6 +48,9 @@
                             <a class="btn btn-secondary w-100 mb-1 mt-1" href="/user-registration.php">
                                 User Registration
                             </a>
+                            <a class="btn btn-secondary w-100 mb-1 mt-1" href="/event-registrations.php">
+                                Event Registrations
+                            </a>
                         </div>
                     </div>
                 </div>
