@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-lg-1 col-md-1 col-sm-12">
                     <h2 class="customSectionTitle">
-                        PROSHOWS REGISTRATIONS
+                        WORKSHOP REGISTRATIONS
                     </h2>
                 </div>
                 <div class="col-lg-11 col-md-11 col-sm-12">
